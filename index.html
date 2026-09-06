@@ -1,775 +1,1370 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rookie Joki - Joki Rank MLBB Termurah Se-Nusantara</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rookie Joki - Joki Rank MLBB Termurah Se-Nusantara</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+  
+<!-- Offline File (Fallback) -->
+<script src="assets/tailwind.min.css"></script>
+<script src="assets/lucide.min.js"></script>
+
+<style>
+/* CSS Animasi Running Text */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+/* Hide Scrollbar untuk Tab Filter */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
 </head>
-<body>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 1 - THE NAVBAR SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////-->
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-	<div class="container">
-		<a class="navbar-brand" href="#">
-			<img src="images/logo.png" alt="logo image">
-		</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-			</button>
-	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
-			<li class="nav-item"><a class="nav-link" href="#payment">Payment</a></li>
-			<li class="nav-item"><a class="nav-link" href="#jasa">Jasa</a></li>
-			<li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
-			<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-			<li class="nav-item"><a class="nav-link" href="#done">Done</a></li>
-			<li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
-        </ul>
-			<button type="button" class="rounded-pill btn-rounded">+62852 6655 8018<span><a href="https://wa.me/+6285266558018" target="_blank"><i class="fab fa-whatsapp"></i></a></span></button>
-     </div>
+<body class="bg-gray-200 text-gray-800 font-sans flex justify-center min-h-screen">
+
+<!-- WRAPPER MOBILE FRAME (Max-Width 430px) -->
+<div class="w-full max-w-[430px] bg-white min-h-screen shadow-2xl relative flex flex-col border-x border-gray-300 pb-16 overflow-x-hidden">
+  
+<!-- TOP-BAR/HEADER & NAVIGATION -->
+<header class="sticky top-0 z-40 bg-white shadow-sm border-b">
+
+<!-- Sub-Header: Bagian Lokasi Pengiriman -->
+<div class="bg-emerald-50 px-4 py-2 border-b border-emerald-100 text-xs text-emerald-800 flex items-center justify-between">
+	<div class="flex items-center gap-1.5 truncate">
+		<i data-lucide="phone" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+		<span class="truncate">Segera order via: <strong class="font-semibold text-gray-900">WhatsApp</strong></span>
     </div>
+	<a href="https://wa.me/6285266558018" target="_blank" class="text-emerald-600 font-bold underline ml-2 shrink-0 hover:text-emerald-700">+62 852-6655-8018</a>
+</div>
+
+<!-- BAGIAN BERITA BERJALAN (RUNNING TEXT) -->
+<div class="bg-emerald-600 text-white text-[11px] font-medium py-1.5 px-3 flex items-center gap-2 overflow-hidden border-t border-emerald-700">
+  <span class="bg-amber-400 text-gray-900 text-[9px] font-black px-1.5 py-0.5 rounded shrink-0 flex items-center gap-1">
+	  <i data-lucide="megaphone" class="w-3 h-3"></i> INFO
+  </span>
+          
+  <div class="overflow-hidden w-full relative">
+	  <div class="animate-marquee cursor-pointer">
+		  🟢 <span class="font-bold text-amber-300">Status Worker:</span> Ready (Antrian Normal) • 1 menit yang lalu*&nbsp;&nbsp;&nbsp;
+		  ⚡ <span class="font-bold text-amber-300">Estimasi Pengerjaan:</span> 1–3 Jam • 5 menit yang lalu*&nbsp;&nbsp;&nbsp;
+		  🛒 <span class="font-bold text-amber-300">Baru saja:</span> Akun [Oro.chimaru] memesan Joki Mythic Honor (10 Bintang) • 10 menit yang lalu*&nbsp;&nbsp;&nbsp;
+		  📢 <span class="font-bold text-amber-300">Penyelesaian Hari Ini:</span> Selamat untuk akun Ma.dara telah mencapai Rank Mythical Glory ⭐57 • 15 menit yang lalu*&nbsp;&nbsp;&nbsp;
+		  📢 <span class="font-bold text-amber-300">Promo:</span> Dapatkan free 3⭐ untuk minimal order 10⭐ di Rank apapun • 20 menit yang lalu*&nbsp;&nbsp;&nbsp;
+		  📢 <span class="font-bold text-amber-300">Baru saja:</span> Selamat untuk akun Wagaleseh telah mencapai Rank Mythical Immortal *200
+      </div>
+  </div>
+</div>
+
+<!-- Bagian HEADER UTAMA & AKSES ADMIN -->
+<div class="px-4 py-3 flex items-center justify-between gap-2">
+	<a href="#" class="text-xl font-black text-emerald-600 tracking-tight flex items-center gap-1">
+		<i data-lucide="gamepad-2" class="w-6 h-6"></i> Rookie Joki
+    </a>
+    <!-- Tombol Akses Mode Admin -->
+    <button id="btnAdminAccess" onclick="handleAdminButtonClick()" class="text-xs px-2.5 py-1 rounded-full border border-gray-200 text-gray-600 font-semibold flex items-center gap-1 hover:bg-gray-50 transition">
+        <i data-lucide="lock" class="w-3.5 h-3.5" id="adminStatusText"></i>        
+    </button>
+</div>
+
+<!-- Bagian Search Bar/Pencarian -->
+<div class="px-4 pb-3">
+	<div class="relative">
+		<input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Cari joki, gendong, mabar vip..." class="w-full bg-gray-100 border border-gray-200 rounded-full py-2 pl-9 pr-4 text-xs focus:outline-none focus:border-emerald-500">
+        <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-2.5"></i>
+    </div>
+</div>	  
+</header>
+
+<main class="px-4 py-4 space-y-6 flex-1">
+
+<!-- BANNER PROMO SLIDER (DENGAN CRUD) -->
+<section class="space-y-2">
+  <div class="flex justify-between items-center">
+    <span class="text-xs font-bold text-gray-700">Promo & Event</span>
+    <button id="btnAddBanner" onclick="openBannerFormModal()" class="hidden text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-2 py-0.5 rounded-lg transition items-center gap-1">
+      <i data-lucide="plus" class="w-3 h-3"></i> Tambah Banner
+    </button>
+  </div>
+  
+  <div class="relative rounded-2xl overflow-hidden shadow-sm group">
+    <div id="slider-track" class="flex transition-transform duration-500 ease-out w-full"></div>
+    <button id="prev-slide" onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 text-gray-800 p-1 rounded-full shadow hover:bg-white transition z-10"><i data-lucide="chevron-left" class="w-4 h-4"></i></button>
+    <button id="next-slide" onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 text-gray-800 p-1 rounded-full shadow hover:bg-white transition z-10"><i data-lucide="chevron-right" class="w-4 h-4"></i></button>
+    <div id="slider-dots" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10"></div>
+  </div>
+</section>
+
+<!-- METODE PEMBAYARAN (DENGAN CRUD) -->
+<section class="bg-gray-50 rounded-2xl p-3.5 border border-gray-100 space-y-2.5">
+	<div class="flex items-center justify-between border-b border-gray-200/60 pb-2">
+		<div class="flex items-center gap-1.5">
+			<i data-lucide="wallet" class="w-4 h-4 text-emerald-600"></i>
+            <h3 class="text-xs font-bold text-gray-800">Metode Pembayaran</h3>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Amanah & Terpercaya</span>
+          <button id="btnAddPayment" onclick="openPaymentFormModal()" class="hidden text-xs bg-emerald-600 text-white font-bold px-1.5 py-0.5 rounded hover:bg-emerald-700 transition">
+            <i data-lucide="plus" class="w-3 h-3"></i>
+          </button>
+        </div>
+    </div>
+    <div class="grid grid-cols-4 gap-2 text-center" id="payment-grid"></div>
+</section>
+
+<!-- KALKULATOR -->
+<section class="px-0.5">
+  <div class="p-4 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-2xl flex items-center justify-between">
+    <div class="space-y-0.5">
+      <h4 class="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+        <i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i>
+        Hitung Biaya Joki
+      </h4>
+      <p class="text-[10px] text-gray-500">Estimasi harga rank & target WR instan.</p>
+    </div>
+    <button onclick="toggleCalcModal(true)" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl transition shadow-sm flex items-center gap-1 shrink-0">
+      Hitung <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+    </button>
+  </div>
+</section>
+
+<!-- PRICELIST JOKI MLBB (DENGAN AKSI CRUD) -->
+<section>
+<div class="flex justify-between items-center mb-3">
+  <h2 class="text-sm font-bold text-gray-900">Pricelist Joki Rank</h2>
+  <!-- Tombol Tambah Produk (Khusus Admin) -->
+  <button id="btnAddProduct" onclick="openProductFormModal()" class="hidden text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-2.5 py-1 rounded-lg transition items-center gap-1">
+    <i data-lucide="plus" class="w-3.5 h-3.5"></i> Tambah Produk
+  </button>
+</div>
+
+<!-- GRID PRODUK DARI LOCALSTORAGE -->
+<div class="grid grid-cols-2 gap-3" id="product-grid"></div>
+</section>
+
+<!-- LEADERBOARD LINK -->
+<section class="px-0.5">
+  <div class="p-4 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-2xl flex items-center justify-between">
+    <div class="space-y-0.5">
+      <h4 class="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+        <i data-lucide="trophy" class="w-4 h-4 text-emerald-600"></i> Leaderboard
+      </h4>
+      <p class="text-[10px] text-gray-500">Lihat peringkat para pemain disini.</p>
+    </div>
+	<a href="leaderboard.html" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl transition shadow-sm flex items-center gap-1 shrink-0 inline-flex">
+		Lihat <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+	</a>
+  </div>
+</section>
+
+<!-- GRID GALERI PORTFOLIO (DENGAN AKSI CRUD) -->
+<section class="space-y-3">
+  <div class="flex justify-between items-center">
+    <h2 class="text-sm font-bold text-gray-900">Done Portfolio</h2>
+    <button id="btnAddPortfolio" onclick="openPortfolioFormModal()" class="hidden text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-2.5 py-1 rounded-lg transition items-center gap-1">
+      <i data-lucide="plus" class="w-3.5 h-3.5"></i> Tambah Foto
+    </button>
+  </div>
+
+  <div class="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-semibold">
+    <button onclick="filterGaleri('all')" id="btn-filter-all" class="btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-emerald-600 text-white shadow-sm transition">Semua</button>
+    <button onclick="filterGaleri('rank')" id="btn-filter-rank" class="btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-gray-100 text-gray-600 hover:bg-gray-200 transition">Rank</button>
+    <button onclick="filterGaleri('joki-gendong')" id="btn-filter-joki-gendong" class="btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-gray-100 text-gray-600 hover:bg-gray-200 transition">Joki Gendong</button>
+    <button onclick="filterGaleri('mabar-vip')" id="btn-filter-mabar-vip" class="btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-gray-100 text-gray-600 hover:bg-gray-200 transition">Mabar VIP</button>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3" id="gallery-grid"></div>
+</section>
+
+<!-- FAQ (DENGAN CRUD) -->
+<section class="bg-white rounded-2xl p-3.5 border border-gray-200/80 shadow-2xs space-y-3">
+	<div class="flex items-center justify-between border-b border-gray-100 pb-2">
+		<div class="flex items-center gap-1.5">
+          <i data-lucide="help-circle" class="w-4 h-4 text-emerald-600"></i>
+          <h3 class="text-xs font-bold text-gray-800">Pertanyaan Sering Diajukan (FAQ)</h3>
+        </div>
+        <button id="btnAddFaq" onclick="openFaqFormModal()" class="hidden text-xs bg-emerald-600 text-white font-bold px-2 py-0.5 rounded hover:bg-emerald-700 transition flex items-center gap-1">
+          <i data-lucide="plus" class="w-3 h-3"></i> Tambah
+        </button>
+	</div>
+    <div class="space-y-2" id="faq-list"></div>
+</section>
+
+</main>
+
+<!-- BAGIAN FOOTER SOSIAL MEDIA (DENGAN AKSES ADMIN & CRUD) -->
+<footer class="bg-gray-50 border-t border-gray-100 p-4 text-center space-y-3">
+<div class="flex justify-between items-center px-1">
+  <p class="text-[10px] text-gray-500">Temukan kami di:</p>
+  <button id="btnAddSocial" onclick="openSocialFormModal()" class="hidden text-[10px] bg-emerald-600 text-white font-bold px-2 py-0.5 rounded hover:bg-emerald-700 transition items-center gap-1">
+    <i data-lucide="plus" class="w-3 h-3"></i> Tambah Sosmed
+  </button>
+</div>
+
+<!-- Container Icon Sosial Media Dinamis -->
+<div class="flex justify-center items-center gap-3 pt-1 flex-wrap" id="social-grid"></div>
+
+<p class="text-[9px] text-gray-400 font-medium">© 2021 Rookie Joki. Hak Cipta Dilindungi.</p>
+</footer>
+<!-- AKHIR BAGIAN FOOTER SOSIAL MEDIA -->
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="fixed bottom-0 w-full max-w-[430px] bg-white border-t border-gray-200 flex justify-around py-2 z-30">
+<a href="index.html" class="flex flex-col items-center text-emerald-600 gap-0.5"><i data-lucide="home" class="w-5 h-5"></i><span class="text-[10px] font-bold">Beranda</span></a>
+<a href="rookie.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="gamepad" class="w-5 h-5"></i><span class="text-[10px] font-medium">Rookie</span></a>
+<a href="testimoni.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="handshake" class="w-5 h-5"></i><span class="text-[10px] font-medium">Testimoni</span></a>
+<a href="disclaimer.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="form" class="w-5 h-5"></i><span class="text-[10px] font-medium">Disclaimer</span></a>
+<a href="build.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="notebook" class="w-5 h-5"></i><span class="text-[10px] font-medium">Blog</span></a>
 </nav>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                            START SECTION 2 - THE INTRO SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<section id="beranda" class="intro-section">
-  <div class="container">
-    <div class="row align-items-center text-white">
-      <!-- START THE CONTENT FOR THE INTRO  -->
-      <div class="col-md-6 intros text-start">
-        <h1 class="display-2">
-          <span class="display-2--intro">Halo!, Kami Rookie Joki</span>
-          <span class="display-2--description lh-base">
-            Bingung Winrate naik-turun terus, lalu Rank kalian masih stak di Epic/Legend? Sini...!!! Kami siap mengatasi permasalahan seputar Mobile Legends kalian kingss!!
-          </span>
-        </h1>
-        <button type="button" class="rounded-pill btn-rounded">Segera order Kami</a><span><a href="https://wa.me/+6285266558018" target="_blank"><i class="fab fa-whatsapp"></i></a></span>
-        </button>
+<!-- MODAL LOGIN ADMIN -->
+<div id="adminModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-xs w-full p-5 shadow-xl space-y-4 relative">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm flex items-center gap-1.5">
+        <i data-lucide="shield-lock" class="w-4 h-4 text-emerald-600"></i> Login Admin
+      </h3>
+      <button onclick="closeAdminModal()" class="text-gray-400 hover:text-gray-600 font-bold">✕</button>
+    </div>
+    <div class="space-y-3">
+      <div>
+        <label class="block text-xs font-semibold text-gray-700 mb-1">PIN Administrator</label>
+        <input type="password" id="adminPinInput" placeholder="Masukkan PIN" class="w-full border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-emerald-500 text-center tracking-widest" onkeyup="if(event.key === 'Enter') submitAdminPin()">
       </div>
-      <!-- START THE CONTENT FOR THE VIDEO -->
-      <div class="col-md-6 intros text-end">
-        <div class="video-box">
-          <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
-          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-            <span>
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span class="border-animation border-animation--border-1"></span>
-            <span class="border-animation border-animation--border-2"></span>
-          </a>		  
-		</div>
-      </div>
-	  <!-- END THE CONTENT FOR THE VIDEO -->
+      <button onclick="submitAdminPin()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-xl text-xs transition">Verifikasi PIN</button>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>  
-</section>
+</div>
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////
-                             START SECTION 3 - THE CAMPANIES SECTION  
-////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- MODAL ORDER FORM -->
+<div id="orderModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-base" id="modalProductName">Form Pemesanan</h3>
+      <button onclick="document.getElementById('orderModal').classList.add('hidden')" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <div class="bg-gray-50 p-3 rounded-lg space-y-1.5 text-xs">
+      <div class="flex justify-between items-center"><span class="text-gray-500">Harga Satuan:</span><span id="modalProductPrice" class="font-bold text-gray-700">Rp 0</span></div>
+      <div class="flex justify-between items-center border-t border-gray-200 pt-1.5"><span class="font-bold text-gray-800">Total Harga:</span><span id="modalTotalPrice" class="font-black text-emerald-600">Rp 0</span></div>
+    </div>
+    <div>
+      <label id="orderQuantityLabel" class="block text-xs font-bold text-gray-700 mb-1">Jumlah Bintang</label>
+      <input type="number" id="orderQuantity" value="1" min="1" class="w-full border border-gray-200 rounded-lg p-2 text-sm focus:outline-none focus:border-emerald-500">
+    </div>
+    <div>
+      <label class="block text-xs font-bold text-gray-700 mb-1">Pilih Metode Pembayaran</label>
+      <select id="paymentMethod" class="w-full border border-gray-200 rounded-lg p-2 text-sm focus:outline-none">
+        <option value="" disabled selected>-- Pilih Pembayaran --</option>
+        <option value="QRIS">QRIS (All Payment)</option>
+        <option value="BCA">Bank BCA</option>
+        <option value="Mandiri">Bank Mandiri</option>
+        <option value="DANA">DANA</option>
+      </select>
+    </div>
+    <div>
+      <label class="block text-xs font-bold text-gray-700 mb-1">Detail Akun (Opsional)</label>
+      <textarea id="userNote" rows="2" placeholder="Email/ID & Server..." class="w-full border border-gray-200 rounded-lg p-2 text-xs focus:outline-none"></textarea>
+    </div>
+    <button onclick="processPaymentOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-xl text-sm transition">Order via WhatsApp</button>
+  </div>
+</div>
 
-  <section id="payment" class="campanies">
-    <div class="container">
-      <div class="row text-center">
-        <h4 class="fw-bold lead mb-3">Payment / Pembayaran yang tersedia</h4>
-        <div class="heading-line mb-5"></div>
+<!-- MODAL FORM BANNER (CREATE & EDIT) -->
+<div id="bannerFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm" id="bannerFormTitle">Tambah Banner</h3>
+      <button onclick="closeBannerFormModal()" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <input type="hidden" id="bannerFormId">
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Judul Banner</label>
+      <input type="text" id="bannerFormTitleInput" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Label Tag</label>
+      <input type="text" id="bannerFormTag" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Skin Collab / Promo">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Deskripsi Singkat</label>
+      <input type="text" id="bannerFormDesc" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">URL Gambar Banner</label>
+      <input type="text" id="bannerFormImage" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="images/banner/Banner1.png">
+    </div>
+    <button onclick="saveBannerForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan Banner</button>
+  </div>
+</div>
+
+<!-- MODAL FORM METODE PEMBAYARAN (CREATE & EDIT) -->
+<div id="paymentFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm" id="paymentFormTitle">Tambah Metode Pembayaran</h3>
+      <button onclick="closePaymentFormModal()" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <input type="hidden" id="paymentFormId">
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Metode</label>
+      <input type="text" id="paymentFormName" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="QRIS / Bank / E-Wallet">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Keterangan / Detail</label>
+      <input type="text" id="paymentFormSub" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Instan / GoPay / BCA">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Warna Teks Title (Tailwind class)</label>
+      <input type="text" id="paymentFormColor" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="text-red-600">
+    </div>
+    <button onclick="savePaymentForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan Metode</button>
+  </div>
+</div>
+
+<!-- MODAL FORM FAQ (CREATE & EDIT) -->
+<div id="faqFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm" id="faqFormTitle">Tambah FAQ</h3>
+      <button onclick="closeFaqFormModal()" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <input type="hidden" id="faqFormId">
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Judul FAQ / Pertanyaan</label>
+      <input type="text" id="faqFormQuestion" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Jawaban / Isi</label>
+      <p class="text-[10px] text-gray-400 mb-1.5">*Gunakan nomor (1., 2., dst.) dan Enter untuk pemisah poin otomatis.</p>
+      <textarea id="faqFormAnswer" rows="5" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="1. Poin pertama...&#10;2. Poin kedua..."></textarea>
+    </div>
+    <button onclick="saveFaqForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan FAQ</button>
+  </div>
+</div>
+
+<!-- MODAL FORM PRODUK (CREATE & EDIT) -->
+<div id="productFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm" id="productFormTitle">Tambah Produk Baru</h3>
+      <button onclick="closeProductFormModal()" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <input type="hidden" id="prodFormId">
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Produk</label>
+      <input type="text" id="prodFormName" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Contoh: Grandmaster / Mabar VIP">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Kategori / Label Tag</label>
+      <input type="text" id="prodFormTag" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Contoh: Rank / Tournament">
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <div>
+        <label class="block text-xs font-semibold text-gray-700 mb-1">Harga (Rp)</label>
+        <input type="number" id="prodFormPrice" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="0 untuk Hubungi Admin">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-gray-700 mb-1">Satuan</label>
+        <select id="prodFormUnit" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500">
+          <option value="Bintang">Bintang</option>
+          <option value="Paket">Paket</option>
+        </select>
       </div>
     </div>
-    <!-- START THE CAMPANIES CONTENT  -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-1.png" alt="Bank Mandiri" title="Bank Mandiri" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-2.png" alt="GOPAY" title="GOPAY" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-3.png" alt="OVO" title="OVO" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-4.png" alt="QRIS" title="QRIS" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-5.png" alt="DANA" title="DANA" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-6.png" alt="Shopee Pay" title="Shopee Pay" class="img-fluid">
-          </div>
-        </div>
-      </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Sub-Deskripsi</label>
+      <input type="text" id="prodFormSub" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Contoh: Per-Bintang/⭐️">
     </div>
-  </section>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">URL Gambar Produk</label>
+      <input type="text" id="prodFormImage" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="images/pricelist/GM.png">
+    </div>
+    <button onclick="saveProductForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan Produk</button>
+  </div>
+</div>
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////
-                         START SECTION 4 - THE SERVICES  
-///////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="jasa" class="services">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold">Jasa</h1>
-      <div class="heading-line mb-1"></div>
+<!-- MODAL FORM PORTFOLIO (CREATE) -->
+<div id="portfolioFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm">Tambah Portfolio Foto</h3>
+      <button onclick="closePortfolioFormModal()" class="text-gray-400 font-bold">✕</button>
     </div>
-  <!-- START THE DESCRIPTION CONTENT  -->
-    <div class="row pt-2 pb-2 mt-0 mb-3">
-      <div class="col-md-6 border-right">
-        <div class="bg-white p-3">
-          <h2 class="fw-bold text-capitalize text-center">
-            Layanan Kami Mulai dari Joki Rank Hingga MLBB Rising Open
-          </h2>
-        </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Judul Layanan</label>
+      <input type="text" id="portFormTitle" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Contoh: Joki Gendong">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Kategori Galeri</label>
+      <select id="portFormCategory" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500">
+        <option value="rank">Rank</option>
+        <option value="joki-gendong">Joki Gendong</option>
+        <option value="mabar-vip">Mabar VIP</option>
+      </select>
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Deskripsi Hasil</label>
+      <input type="text" id="portFormDesc" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="Contoh: Mythic to Honor">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">URL Gambar Portfolio</label>
+      <input type="text" id="portFormImage" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="images/done/Done1.png">
+    </div>
+    <button onclick="savePortfolioForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan Portfolio</button>
+  </div>
+</div>
+
+<!-- MODAL FORM SOSIAL MEDIA (CREATE & EDIT) -->
+<div id="socialFormModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50">
+  <div class="bg-white rounded-2xl max-w-md w-full p-5 shadow-xl space-y-3">
+    <div class="flex justify-between items-center border-b pb-2">
+      <h3 class="font-bold text-gray-800 text-sm" id="socialFormTitle">Tambah Sosial Media</h3>
+      <button onclick="closeSocialFormModal()" class="text-gray-400 font-bold">✕</button>
+    </div>
+    <input type="hidden" id="socialFormId">
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Platform</label>
+      <input type="text" id="socialFormName" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="WhatsApp / Instagram / TikTok">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">URL / Link Tujuan</label>
+      <input type="text" id="socialFormUrl" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="https://instagram.com/rookie.joki">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Lucide Icon</label>
+      <input type="text" id="socialFormIcon" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="message-circle, camera, music-2, at-sign, youtube, dll">
+    </div>
+    <div>
+      <label class="block text-xs font-semibold text-gray-700 mb-1">Warna Background & Icon (Tailwind Class)</label>
+      <input type="text" id="socialFormStyle" class="w-full border p-2 text-xs rounded-lg focus:outline-none focus:border-emerald-500" placeholder="bg-emerald-100 text-emerald-600 hover:bg-emerald-600">
+    </div>
+    <button onclick="saveSocialForm()" class="w-full bg-emerald-600 text-white text-xs font-bold py-2 rounded-xl hover:bg-emerald-700 transition">Simpan Sosial Media</button>
+  </div>
+</div>
+
+<!-- MODAL KALKULATOR -->
+<div id="calcModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+  <div class="bg-white w-full max-w-sm rounded-2xl p-5 shadow-xl space-y-4 relative max-h-[90vh] overflow-y-auto">
+    <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+      <h4 class="text-sm font-bold text-gray-800 flex items-center gap-1.5"><i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i> Kalkulator MLBB</h4>
+      <button onclick="toggleCalcModal(false)" class="text-gray-400 p-1 rounded-lg"><i data-lucide="x" class="w-4 h-4"></i></button>
+    </div>
+    <div class="flex p-1 bg-gray-100 rounded-xl border text-xs font-bold">
+      <button id="tabRankBtn" onclick="switchCalcTab('rank')" class="w-1/2 py-1.5 rounded-lg bg-emerald-600 text-white transition">Joki Rank</button>
+      <button id="tabWrBtn" onclick="switchCalcTab('wr')" class="w-1/2 py-1.5 rounded-lg text-gray-500 transition">Target WR</button>
+    </div>
+    <div id="calcRankContent" class="space-y-3">
+      <div>
+        <label class="text-[11px] font-semibold text-gray-600 mb-1 block">Tier Rank</label>
+        <select id="tierRank" onchange="hitungHargaRank()" class="w-full text-xs p-2.5 bg-gray-50 border rounded-xl">
+          <option value="6000" selected>Epic (Rp6.000 / bintang)</option>
+          <option value="8000">Legend (Rp8.000 / bintang)</option>
+          <option value="10000">Mythic (Rp10.000 / bintang)</option>
+        </select>
       </div>
-      <div class="col-md-6">
-        <div class="bg-white p-4 text-start">
-          <p class="fw-light">
-            Banyak pemain yang terkadang merasa terjebak di rank tertentu, seperti Epic, Legend, atau bahkan di Mythic, meskipun sudah berusaha sebaik mungkin. Namun, kini ada solusi terbaik dari joki kami untuk Anda.
-          </p>
-        </div>
+      <div>
+        <label class="text-[11px] font-semibold text-gray-600 mb-1 block">Jumlah Bintang</label>
+        <input type="number" id="jumlahBintang" min="1" value="5" oninput="hitungHargaRank()" class="w-full text-xs p-2.5 bg-gray-50 border rounded-xl">
       </div>
+      <div class="p-3 bg-emerald-50 border rounded-xl space-y-1">
+        <div class="flex justify-between text-xs"><span>Estimasi Biaya:</span><span id="outputHargaRank" class="font-black text-emerald-600">Rp30.000</span></div>
+      </div>
+      <button onclick="orderWaRank()" class="w-full bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-xs">Order via WA</button>
+    </div>
+    <div id="calcWrContent" class="space-y-3 hidden">
+      <div>
+        <label class="text-[11px] font-semibold text-gray-600 mb-1 block">Total Match</label>
+        <input type="number" id="totalMatch" value="500" oninput="hitungWr()" class="w-full text-xs p-2.5 bg-gray-50 border rounded-xl">
+      </div>
+      <div>
+        <label class="text-[11px] font-semibold text-gray-600 mb-1 block">Win-Rate Saat Ini (%)</label>
+        <input type="number" id="wrSaatIni" value="52.0" oninput="hitungWr()" class="w-full text-xs p-2.5 bg-gray-50 border rounded-xl">
+      </div>
+      <div>
+        <label class="text-[11px] font-semibold text-gray-600 mb-1 block">Target Win-Rate (%)</label>
+        <input type="number" id="targetWr" value="60.0" oninput="hitungWr()" class="w-full text-xs p-2.5 bg-gray-50 border rounded-xl">
+      </div>
+      <div class="p-3 bg-emerald-50 border rounded-xl space-y-1">
+        <div class="flex justify-between text-xs"><span>Win-Streak:</span><span id="outputMatchDibutuhkan" class="font-black text-emerald-600">100 Match</span></div>
+      </div>
+      <button onclick="orderWaWr()" class="w-full bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-xs">Order WR via WA</button>
     </div>
   </div>
+</div>
 
-  <!-- START THE CONTENT FOR THE SERVICES  -->
-  <div class="container">
-    <!-- START THE MARKETING CONTENT  -->
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <h3 class="display-3--title mt-1">Rank Eceran</h3>
-          <p class="lh-lg">
-            Kami memahami sekali para pemain Solo Rank yang akan sedikit lagi menuju ke Rank diinginkan, tetapi dalam prosesnya terkendala dengan bertemunya rekan satu tim yang tidak bermain solid sama sekali. Sehingga langkah yang sedikit lagi menuju Rank impian Anda menjadi terhambat atau bahkan Rank Anda menjadi terjun bebas sekali jatuh jauh ke Rank sebelumnya.
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Pricelist<span><a href="pricelistpage.html" target="_blank"><i class="fas fa-arrow-right"></i></a></span>
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-        <div class="services__pic">
-          <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <!-- START THE WEB DEVELOPMENT CONTENT  -->
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-        <div class="services__pic">
-          <img src="images/services/service-4.png" alt="web development illustration" class="img-fluid">
-        </div>
-      </div>	  
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-trophy"></div>
-          <h3 class="display-3--title mt-1">MLBB Rising Open</h3>
-          <p class="lh-lg">
-            Mendapatkan Trophy/Piala MRO adalah suatu hal yang diimpikan para pemain Mobile Legends, terlebih lagi meningkatkan prestise player karena atribut trophy/piala dapat di pajang di profil, Anda juga bisa mendapatkan hadiah dari Moonton. Tetapi kendalanya Anda sangat sulit sekali bertemu tim yang solid saat MRO, sehingga tereliminasi dengan cepat dan kalah.
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Pricelist<span><a href="pricelistpage.html" target="_blank"><i class="fas fa-arrow-right"></i></a></span>
-          </button>
-        </div>
-      </div>
-    </div>	
-    <!-- START THE CLOUD HOSTING CONTENT  -->
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-users"></div>
-          <h3 class="display-3--title mt-1">Mabar VIP/Joki Gendong</h3>
-          <p class="lh-lg">
-            Anda bisa mabar dengan Rookie Joki, untuk memberikan pengalaman bermain yang lebih seru karena bisa sekalian belajar langsung dari segi Makro & Mikro dari para penjoki sambil tetap menikmati game. 
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Pricelist<span><a href="pricelistpage.html" target="_blank"><i class="fas fa-arrow-right"></i></a></span>
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-        <div class="services__pic">
-          <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
-        </div>
-      </div>
-    </div>
-	<!-- START THE WEB DEVELOPMENT CONTENT  -->
-	<!--
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-        <div class="services__pic">
-          <img src="images/services/service-4.png" alt="web development illustration" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-trophy"></div>
-          <h3 class="display-3--title mt-1">MLBB Rising Open</h3>
-          <p class="lh-lg">
-            Mendapatkan Trophy/Piala MRO adalah suatu hal yang diimpikan para pemain Mobile Legends, terlebih lagi meningkatkan prestise player karena atribut trophy/piala dapat di pajang di profil, Anda juga bisa mendapatkan hadiah dari Moonton. Tetapi kendalanya Anda sangat sulit sekali bertemu tim yang solid saat MRO, sehingga tereliminasi dengan cepat dan kalah.
-          </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Pricelist<span><a href="pricelistpage.html" target="_blank"><i class="fas fa-arrow-right"></i></a></span>
-          </button>
-        </div>
-      </div>
-    </div>
-	-->
-  </div>
-</section>
-
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 5 - THE TESTIMONIALS  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="testimoni" class="testimonials">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-  <div class="container">
-    <div class="row text-center text-white">
-      <h1 class="display-3 fw-bold">Testimoni</h1>
-      <hr style="width: 100px; height: 3px; " class="mx-auto">
-      <p class="lead pt-1">Kata mereka setelah menggunakan jasa joki kami</p>
-    </div>
-
-    <!-- START THE CAROUSEL CONTENT  -->
-    <div class="row align-items-center">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- CAROUSEL ITEM 1 -->
-          <div class="carousel-item active">
-            <!-- testimonials card  -->
-            <div class="testimonials__card">
-              <p class="lh-lg">
-                <i class="fas fa-quote-left"></i>
-                Gokil sihh!!! Winstreak terus, jadi ingin terus berlangganan buat joki di Rookie Joki.
-                <i class="fas fa-quote-right"></i>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </p>
-            </div>
-            <!-- client picture  -->
-            <div class="testimonials__picture">
-              <img src="images/testimonials/client.png" alt="client-1 picture" class="rounded-circle img-fluid">
-            </div>
-            <!-- client name & role  -->
-            <div class="testimonials__name">
-              <h3>Customer-10</h3>
-              <p class="fw-light">Joki Rank Paket</p>
-            </div>
-          </div>     
-          <!-- CAROUSEL ITEM 2 -->
-          <div class="carousel-item">
-            <!-- testimonials card  -->
-            <div class="testimonials__card">
-              <p class="lh-lg">
-                <i class="fas fa-quote-left"></i>
-                Sekali lagi makasi banyak ya kakk, kakak dan temennya jago2, sory kalau berat gendong beban seperti diriku...
-                <i class="fas fa-quote-right"></i>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </p>
-            </div>
-            <!-- client picture  -->
-            <div class="testimonials__picture">
-              <img src="images/testimonials/client.png" alt="client-2 picture" class="rounded-circle img-fluid">
-            </div>
-            <!-- client name & role  -->
-            <div class="testimonials__name">
-              <h3>Customer-31</h3>
-              <p class="fw-light">Joki Gendong/Mabar VIP</p>
-            </div>
-          </div>     
-          <!-- CAROUSEL ITEM 3 -->
-          <div class="carousel-item">
-            <!-- testimonials card  -->
-            <div class="testimonials__card">
-              <p class="lh-lg">
-                <i class="fas fa-quote-left"></i>
-                Mantabbbbb!!! Rookie Joki... bisa request hero-hero yang underated juga disini!! Muantabb poolll...
-                <i class="fas fa-quote-right"></i>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </p>
-            </div>
-            <!-- client picture  -->
-            <div class="testimonials__picture">
-              <img src="images/testimonials/client.png" alt="client-3 picture" class="rounded-circle img-fluid">
-            </div>
-            <!-- client name & role  -->
-            <div class="testimonials__name">
-              <h3>Customer-43</h3>
-              <p class="fw-light">Joki Rank Paket</p>
-            </div>
-          </div>     
-          <!-- CAROUSEL ITEM 4 -->
-          <div class="carousel-item">
-            <!-- testimonials card  -->
-            <div class="testimonials__card">
-              <p class="lh-lg">
-                <i class="fas fa-quote-left"></i>
-                Fast Response, Jokinya cepat selesai dan bisa tembus MCL Final...
-                <i class="fas fa-quote-right"></i>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </p>
-            </div>
-            <!-- client picture  -->
-            <div class="testimonials__picture">
-              <img src="images/testimonials/client.png" alt="client-4 picture" class="rounded-circle img-fluid">
-            </div>
-            <!-- client name & role  -->
-            <div class="testimonials__name">
-              <h3>Customer-48</h3>
-              <p class="fw-light">MCL Weekly & Final</p>
-            </div>
-          </div>     
-        </div>
-        <div class="text-center">
-          <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        </button>
-        <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        </button>
-        </div>
-      </div>
+<!-- MODAL LIGHTBOX PROMO -->
+<div id="promo-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div id="modal-content" class="bg-white w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl relative">
+    <button id="close-modal" class="absolute top-2 right-2 bg-black/50 text-white p-1 rounded-full z-10"><i data-lucide="x" class="w-4 h-4"></i></button>
+    <img id="modal-img" src="" class="w-full h-48 object-cover">
+    <div class="p-4 space-y-2">
+      <span id="modal-tag" class="text-[9px] font-black px-2 py-0.5 rounded-md uppercase">Tag</span>
+      <h3 id="modal-title" class="text-base font-bold text-gray-800">Judul</h3>
+      <p id="modal-desc" class="text-xs text-gray-600">Deskripsi</p>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
+</div>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                       START SECTION 6 - THE FAQ 
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="faq" class="faq">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold text-uppercase">FAQ</h1>
-      <div class="heading-line"></div>
-      <p class="lead">Tata Cara Order Joki Kami</p>
-    </div>
-    <!-- ACCORDION CONTENT  -->
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div class="accordion" id="accordionExample">
-          <!-- ACCORDION ITEM 1 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                INFORMASI PENTING SEBELUM ORDER
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ol>
-					<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>
-					<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>
-					<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>
-					<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>
-					<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>
-					<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>
-					<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>
-				</ol>
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 2 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                FORMAT ORDER JOKI
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ol>
-					<li>Lengkapi Data Login akun Mobile Legends Anda dengan teliti.</li>
-					<li>Pilih kategori joki, Rank Eceran, Paketan, Joki Gendong atau MRO.</li>
-					<li>Masukkan jumlah Per (Star/Point) yang dituju.</li>
-					<li>Masukan No. WhatsApp Anda dengan benar.</li>
-					<li>Tunggu Admin menghubungi Anda.</li>
-					<li>Admin akan menghubungi untuk Info & Konfirmasi Pembayaran.</li>
-					<li>Setelah pembayaran berhasil, akun Anda akan segera di proses.</li>
-					<li>Estimasi proses Jasa Joki mulai dari minimal 6 Jam – 2 x 24 Jam (Tergantung Banyaknya Antrian).</li>
-					<li>Jika pesanan Anda belum di proses dalam waktu 30 menit, silahkan chat Admin.</li>
-				</ol>
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 3 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Maksimal berapa hero yang bisa di joki?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Request maksimal hero yang boleh di joki sebanyak <strong>3 Hero</strong>, lebih dari itu kami tidak melayani.
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 4 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Jaringan Internet terputus saat Joki Gendong/Mabar VIP
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Jika saat sedang Joki Gendong/Mabar VIP <strong>Jaringan Internet terputus</strong>, hal tersebut tidak masalah, karena worker kami anti kalah-kalah klub.
-              </div>
-            </div>
-          </div>
-		  <!-- ACCORDION ITEM 5 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Apakah MRO bisa di gendong?
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Mohon Maaf, kami tidak menyediakan joki gendong untuk paket MRO.
-              </div>
-            </div>
-          </div>
-		  <!-- ACCORDION ITEM 6
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Can I be claim rank?
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-		  -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
-                              START SECTION 7 - THE PORTFOLIO  
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- JAVASCRIPT LOGIC & FITUR CRUD -->
+<script>
+const NOMOR_WA = "6285266558018";
+const ADMIN_PIN = "050982";
 
-<section id="done" class="portfolio">
-  <div class="container">
-    <div class="row text-center mt-5">
-      <h1 class="display-3 fw-bold text-capitalize">Done</h1>
-      <div class="heading-line"></div>
-      <p class="lead">
-        Joki di kami mengakibatkan MMR Naik & Win-Streak.
-      </p>
-    </div>
-    <!-- FILTER BUTTONS  
-    <div class="row mt-5 mb-4 g-3 text-center">
-      <div class="col-md-12">
-        <button class="btn btn-outline-primary" type="button">All</button>
-        <button class="btn btn-outline-primary" type="button">Win-Streak</button>
-        <button class="btn btn-outline-primary" type="button">MMR+</button>
-        <button class="btn btn-outline-primary" type="button">MRO</button>
-		<button class="btn btn-outline-primary" type="button">Rank</button>
-      </div>
-    </div>
-	-->
-    <!-- START THE PORTFOLIO ITEMS  -->
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#1</h4>
-              <p>Rank Eceran</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#2</h4>
-              <p>Rank Eceran</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#3</h4>
-              <p>Rank Eceran</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#4</h4>
-              <p>Joki Gendong</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#5</h4>
-              <p>Joki Gendong</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#6</h4>
-              <p>Mabar VIP</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#7</h4>
-              <p>MCL Tournament</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#8</h4>
-              <p>Rank Eceran</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="portfolio-box shadow">
-          <img src="images/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
-          <div class="portfolio-info">
-            <div class="caption">
-              <h4>Done#9</h4>
-              <p>Rank Eceran</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+let isAdmin = sessionStorage.getItem("rookie_admin_logged") === "true";
+let currentFilterCategory = 'all';
+let currentSlideIndex = 0;
+let sliderInterval = null;
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-              START SECTION 8 - GET STARTED  
-/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="promo" class="get-started">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold text-capitalize">PROMO</h1>
-      <div class="heading-line"></div>
-      <p class="lh-lg">
-        Dapatkan promo-promo terbaru dari kami disini.
-      </p>
-    </div>
+// DATA DEFAULTS
+const defaultBanners = [
+  { id: 1, tag: "Skin Collab", tagBg: "bg-amber-400 text-gray-900", title: "MLBB x Jujutsu Kaisen", desc: "Dapatkan dalam 10 draw pertama", image: "images/banner/Banner1.png" },
+  { id: 2, tag: "Skin Special", tagBg: "bg-emerald-500 text-white", title: "10TH Anniversary", desc: "Dapatkan Skin Spesial di Ultah MLBB ke-10", image: "images/banner/Banner2.png" }
+];
 
-    <!-- START THE CTA CONTENT  -->
-    <div class="row text-white">
-      <div class="gradient shadow p-3">
-        <div class="cta-info w-100">
-		
-          <h4 class="display-4 fw-bold" align="center">Maaf! Saat ini Anda belum menemukan promo dari kami.</h4>
-		<!--  
-		  <h4 class="display-4 fw-bold" align="center">BONUS +1 <i class="fas fa-star"></i> / Point</h4>
-          <p class="lh-lg" align="center">
-            <i>*Minimal ORDER 10 <i class="fas fa-star"></i> / Point dan berlaku kelipatan.</i>
-          </p>
-		-->
-		  <!--
-          <h3 class="display-3--brief" align="center">Promo ini berlaku untuk?</h3>
-          <ul class="cta-info__list" align="center">
-            <li>Grandmaster</li>
-            <li>Epic</li>
-            <li>Legend, dan</li>
-			<li>Mythic</li>
-          </ul>
-		  -->
-        </div>
-      </div>
-	  <!--
-	  <div class="col-12 col-lg-6 gradient shadow p-3">
-        <div class="cta-info w-100">
-          <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
-          <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias optio minima, tempore architecto sint ipsam dolore tempora facere laboriosam corrupti!
-          </p>
-          <h3 class="display-3--brief">What will be the next step?</h3>
-          <ul class="cta-info__list">
-            <li>We'll prepare the proposal.</li>
-            <li>we'll discuss it together.</li>
-            <li>let's start the discussion.</li>
-          </ul>
-        </div>
-      </div>
-      -->
+const defaultPayments = [
+  { id: 1, name: "QRIS", sub: "Instan", color: "text-red-600" },
+  { id: 2, name: "E-Wallet", sub: "GoPay/OVO", color: "text-blue-600" },
+  { id: 3, name: "Bank", sub: "BCA/Mandiri", color: "text-emerald-700" },
+  { id: 4, name: "PayLater", sub: "ShopeePay", color: "text-orange-600" }
+];
 
-  </div>
-</section>
+const defaultFaqs = [
+  { 
+    id: 1, 
+    question: "Informasi Penting Sebelum Order", 
+    answer: "1. Matikan Verifikasi Akun untuk Mempermudah worker Login.\n2. Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.\n3. Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin." 
+  }
+];
 
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////
-                           START SECTION 9 - THE FOOTER  
-///////////////////////////////////////////////////////////////////////////////////////////////-->
-<footer class="footer">
-  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
-  <div class="container mt-5">
-    <div class="row text-white justify-content-center mt-3 pb-3">
-      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-        <h5 class="text-capitalize fw-bold">Rookie Joki</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <p class="lh-lg">
-          Kami adalah spesialis jasa joki Mobile Legends termurah No. 1 Se-Nusantara, Cepat dan Terpercaya. Metode Pembayaran yang mudah, transaksi otomatis 24 Jam, serta selalu banyak promo-promo yang akan selalu kami berikan kepada Anda.
-        </p>
+const defaultProducts = [
+  { id: 1, name: "Grandmaster", tag: "Rank", sub: "Per-Bintang/⭐️", price: 6000, oldPrice: 8000, unit: "Bintang", image: "images/pricelist/GM.png" },
+  { id: 2, name: "Epic", tag: "Rank", sub: "Per-Bintang/⭐️", price: 6000, oldPrice: 8000, unit: "Bintang", image: "images/pricelist/Epic.png" },
+  { id: 3, name: "Legend", tag: "Rank", sub: "Per-Bintang/⭐️", price: 8000, oldPrice: 10000, unit: "Bintang", image: "images/pricelist/Legend.png" },
+  { id: 4, name: "Legends to Mythic", tag: "Full Grading", sub: "Per-15 Poin Hijau", price: 110000, oldPrice: 150000, unit: "Paket", image: "images/pricelist/Mythic.png" },
+  { id: 5, name: "Mythic", tag: "Rank", sub: "Per-Bintang/⭐️", price: 10000, oldPrice: 150000, unit: "Bintang", image: "images/pricelist/Mythic.png" },
+  { id: 6, name: "Honor", tag: "Rank", sub: "Per-Bintang/⭐️", price: 13000, oldPrice: 17000, unit: "Bintang", image: "images/pricelist/Honor.png" },
+  { id: 7, name: "Glory", tag: "Rank", sub: "Per-Bintang/⭐️", price: 15000, oldPrice: 20000, unit: "Bintang", image: "images/pricelist/Glory.png" },
+  { id: 8, name: "Immortal", tag: "Rank", sub: "Per-Bintang/⭐️", price: 25000, oldPrice: 30000, unit: "Bintang", image: "images/pricelist/Immo.png" },
+  { id: 9, name: "Joki Gendong", tag: "Rank", sub: "Per-Bintang/⭐️", price: 0, oldPrice: 0, unit: "Bintang", image: "images/pricelist/Gendong.png" },
+  { id: 10, name: "Mabar VIP", tag: "Rank", sub: "Per-Bintang/⭐️", price: 0, oldPrice: 0, unit: "Bintang", image: "images/pricelist/VIP.png" }
+];
+
+const defaultPortfolio = [
+  { id: 1, kategori: "rank", judul: "Joki Rank", deskripsi: "Mythic to Honor", gambar: "images/done/Done1.png" },
+  { id: 2, kategori: "rank", judul: "Joki Rank", deskripsi: "Epic to Legend", gambar: "images/done/Done2.png" },
+  { id: 3, kategori: "rank", judul: "Joki Rank", deskripsi: "Honor to Glory", gambar: "images/done/Done3.png" },
+  { id: 4, kategori: "joki-gendong", judul: "Joki Gendong", deskripsi: "Mythic to Honor", gambar: "images/done/Done4.png" },
+  { id: 5, kategori: "joki-gendong", judul: "Joki Gendong", deskripsi: "Glory to Immortal", gambar: "images/done/Done5.png" },
+  { id: 6, kategori: "joki-gendong", judul: "Joki Gendong", deskripsi: "Legend to Mythic", gambar: "images/done/Done6.png" },
+  { id: 7, kategori: "mabar-vip", judul: "Mabar VIP", deskripsi: "Glory to Immortal", gambar: "images/done/Done7.png" },
+  { id: 8, kategori: "mabar-vip", judul: "Mabar VIP", deskripsi: "Mythic Placement", gambar: "images/done/Done8.png" }
+];
+
+const defaultSocials = [
+  { id: 1, name: "WhatsApp", url: "https://wa.me/6285266558018", icon: "message-circle", style: "bg-emerald-100 text-emerald-600 hover:bg-emerald-600 hover:text-white" },
+  { id: 2, name: "Instagram", url: "https://www.instagram.com/rookie.joki?igsh=ZmRzenpmM2s5bDJq", icon: "camera", style: "bg-pink-100 text-pink-600 hover:bg-pink-600 hover:text-white" },
+  { id: 3, name: "TikTok", url: "https://www.tiktok.com/@rookie.joki", icon: "music-2", style: "bg-gray-200 text-gray-800 hover:bg-gray-800 hover:text-white" },
+  { id: 4, name: "Threads", url: "https://threads.com/", icon: "at-sign", style: "bg-gray-400 text-gray-100 hover:bg-gray-500 hover:text-white" }
+];
+
+// LOCALSTORAGE GET & SET
+function getBanners() { const d = localStorage.getItem("rookie_banners"); return d ? JSON.parse(d) : defaultBanners; }
+function saveBanners(d) { localStorage.setItem("rookie_banners", JSON.stringify(d)); }
+
+function getPayments() { const d = localStorage.getItem("rookie_payments"); return d ? JSON.parse(d) : defaultPayments; }
+function savePayments(d) { localStorage.setItem("rookie_payments", JSON.stringify(d)); }
+
+function getFaqs() { const d = localStorage.getItem("rookie_faqs"); return d ? JSON.parse(d) : defaultFaqs; }
+function saveFaqs(d) { localStorage.setItem("rookie_faqs", JSON.stringify(d)); }
+
+function getProducts() { const d = localStorage.getItem("rookie_products"); return d ? JSON.parse(d) : defaultProducts; }
+function saveProducts(d) { localStorage.setItem("rookie_products", JSON.stringify(d)); }
+
+function getPortfolio() {
+  const d = localStorage.getItem("rookie_portfolio");
+  if (!d) return defaultPortfolio;
+  const parsed = JSON.parse(d);
+  if (parsed.length < defaultPortfolio.length) { savePortfolio(defaultPortfolio); return defaultPortfolio; }
+  return parsed;
+}
+function savePortfolio(d) { localStorage.setItem("rookie_portfolio", JSON.stringify(d)); }
+
+function getSocials() { const d = localStorage.getItem("rookie_socials"); return d ? JSON.parse(d) : defaultSocials; }
+function saveSocials(d) { localStorage.setItem("rookie_socials", JSON.stringify(d)); }
+
+// ADMIN AUTHENTICATION
+function handleAdminButtonClick() {
+  if (isAdmin) {
+    if (confirm("Apakah Anda yakin ingin keluar dari Mode Admin?")) {
+      isAdmin = false;
+      sessionStorage.removeItem("rookie_admin_logged");
+      renderUI();
+    }
+  } else {
+    openAdminModal();
+  }
+}
+
+function openAdminModal() {
+  document.getElementById("adminPinInput").value = "";
+  document.getElementById("adminModal").classList.remove("hidden");
+  setTimeout(() => document.getElementById("adminPinInput").focus(), 100);
+}
+
+function closeAdminModal() {
+  document.getElementById("adminModal").classList.add("hidden");
+}
+
+function submitAdminPin() {
+  const pin = document.getElementById("adminPinInput").value;
+  if (pin === ADMIN_PIN) {
+    isAdmin = true;
+    sessionStorage.setItem("rookie_admin_logged", "true");
+    closeAdminModal();
+    renderUI();
+  } else {
+    alert("PIN Admin Salah!");
+  }
+}
+
+function updateAdminUIState() {
+  const btnText = document.getElementById("adminStatusText");
+  const btn = document.getElementById("btnAdminAccess");
+  if (!btnText || !btn) return;
+
+  if (isAdmin) {
+    btnText.innerText = "Mode Admin";
+    btn.classList.add("bg-emerald-600", "text-white");
+    btn.classList.remove("text-gray-600", "border-gray-200");
+  } else {
+    btnText.innerText = "Admin";
+    btn.classList.remove("bg-emerald-600", "text-white");
+    btn.classList.add("text-gray-600", "border-gray-200");
+  }
+}
+
+function renderUI() {
+  updateAdminUIState();
+  
+  // Toggle Admin Buttons
+  document.getElementById("btnAddBanner").style.display = isAdmin ? "inline-flex" : "none";
+  document.getElementById("btnAddPayment").style.display = isAdmin ? "inline-flex" : "none";
+  document.getElementById("btnAddFaq").style.display = isAdmin ? "inline-flex" : "none";
+  document.getElementById("btnAddProduct").style.display = isAdmin ? "inline-flex" : "none";
+  document.getElementById("btnAddPortfolio").style.display = isAdmin ? "inline-flex" : "none";
+  document.getElementById("btnAddSocial").style.display = isAdmin ? "inline-flex" : "none";
+
+  renderBanners();
+  renderPayments();
+  renderFaqs();
+  renderProducts();
+  tampilkanGaleri(currentFilterCategory);
+  renderSocials();
+}
+
+// 1. BANNER SLIDER CRUD
+function renderBanners() {
+  const track = document.getElementById("slider-track");
+  const dots = document.getElementById("slider-dots");
+  if (!track || !dots) return;
+
+  const banners = getBanners();
+  track.innerHTML = "";
+  dots.innerHTML = "";
+
+  banners.forEach((b, idx) => {
+    let adminBtn = isAdmin ? `
+      <div class="absolute top-2 right-2 flex gap-1 z-20">
+        <button onclick="openBannerFormModal(${b.id})" class="bg-amber-500 text-white text-[9px] font-bold px-2 py-0.5 rounded shadow">Edit</button>
+        <button onclick="deleteBanner(${b.id})" class="bg-red-500 text-white text-[9px] font-bold px-2 py-0.5 rounded shadow">Hapus</button>
       </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">Peta Situs</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="about.html" target="_blank">Rookie Joki</a></li>
-          <li><a href="pricelistpage.html" target="_blank">Joki Rank Eceran</a></li>
-          <!--
-		  <li><a href="pricelistpage.html" target="_blank">Joki Rank Paketan</a></li>
-          -->
-		  <li><a href="pricelistpage.html" target="_blank">Joki Gendong</a></li>
-		  <li><a href="pricelistpage.html" target="_blank">Mabar VIP</a></li>
-		  <li><a href="pricelistpage.html" target="_blank">Joki MLBB Rising Open</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">Dukungan</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="https://wa.me/+6285266558018">WhatsApp</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="https://www.instagram.com/rookie.joki?igsh=ZmRzenpmM2s5bDJq" target="_blank">Instagram</a></li>
-		  <li><a href="https://www.tiktok.com/@rookie.joki" target="_blank">TikTok</a></li>          
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">Disclaimer</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <ul class="list-inline campany-list">
-          <li><a href="privasi.html" target="_blank">Kebijakan Pribadi</a></li>
-          <li><a href="syarat.html" target="_blank">Syarat & Ketentuan</a></li>
-          </ul>
-      </div>
-    </div>
-  </div>
-<!-- START THE SOCIAL MEDIA CONTENT  -->
-  <div class="footer-sm" style="background-color: #212121;">
-    <div class="container">
-      <div class="row py-4 text-center text-white">
-        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-          Kami juga ada di:
+    ` : '';
+
+    track.innerHTML += `
+      <div class="min-w-full snap-center relative rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer">
+        ${adminBtn}
+        <img src="${b.image}" alt="${b.title}" class="w-full aspect-[2/1] object-cover block" onerror="this.src='https://placehold.co/400x200/059669/ffffff?text=${encodeURIComponent(b.title)}'">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-4 text-white" onclick="openLightbox('${b.image}', '${b.title}', '${b.desc}')">
+          <span class="${b.tagBg || 'bg-emerald-500 text-white'} text-[9px] font-black px-2 py-0.5 rounded-md uppercase w-max mb-1">${b.tag}</span>
+          <h2 class="text-sm font-extrabold leading-tight drop-shadow-sm">${b.title}</h2>
+          <p class="text-[10px] text-gray-200 mt-0.5">${b.desc}</p>
         </div>
-        <div class="col-lg-7 col-md-6">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.tiktok.com/@rookie.joki" target="_blank"><i class="fab fa-tiktok"></i></a>
-		  <!--
-          <a href="#"><i class="fab fa-telegram"></i></a>
-		  -->
-          <a href="https://www.instagram.com/rookie.joki?igsh=ZmRzenpmM2s5bDJq" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    `;
+
+    dots.innerHTML += `<button class="dot w-2 h-2 rounded-full ${idx === currentSlideIndex ? 'bg-white' : 'bg-white/50'} transition-all" onclick="goToSlide(${idx})"></button>`;
+  });
+
+  goToSlide(currentSlideIndex >= banners.length ? 0 : currentSlideIndex);
+  startSliderAutoPlay();
+}
+
+function startSliderAutoPlay() {
+  if (sliderInterval) clearInterval(sliderInterval);
+  sliderInterval = setInterval(() => {
+    const banners = getBanners();
+    if (banners.length > 0) {
+      currentSlideIndex = (currentSlideIndex + 1) % banners.length;
+      goToSlide(currentSlideIndex);
+    }
+  }, 4000);
+}
+
+function goToSlide(index) {
+  currentSlideIndex = index;
+  const track = document.getElementById("slider-track");
+  if (track) track.style.transform = `translateX(-${index * 100}%)`;
+  
+  const dots = document.querySelectorAll("#slider-dots .dot");
+  dots.forEach((d, idx) => {
+    d.className = `dot w-2 h-2 rounded-full ${idx === index ? 'bg-white' : 'bg-white/50'} transition-all`;
+  });
+}
+
+function prevSlide() {
+  const banners = getBanners();
+  currentSlideIndex = (currentSlideIndex - 1 + banners.length) % banners.length;
+  goToSlide(currentSlideIndex);
+}
+
+function nextSlide() {
+  const banners = getBanners();
+  currentSlideIndex = (currentSlideIndex + 1) % banners.length;
+  goToSlide(currentSlideIndex);
+}
+
+function openBannerFormModal(id = null) {
+  document.getElementById("bannerFormId").value = "";
+  document.getElementById("bannerFormTitleInput").value = "";
+  document.getElementById("bannerFormTag").value = "Promo";
+  document.getElementById("bannerFormDesc").value = "";
+  document.getElementById("bannerFormImage").value = "";
+
+  if (id) {
+    const banners = getBanners();
+    const b = banners.find(item => item.id === id);
+    if (b) {
+      document.getElementById("bannerFormTitle").innerText = "Edit Banner";
+      document.getElementById("bannerFormId").value = b.id;
+      document.getElementById("bannerFormTitleInput").value = b.title;
+      document.getElementById("bannerFormTag").value = b.tag;
+      document.getElementById("bannerFormDesc").value = b.desc;
+      document.getElementById("bannerFormImage").value = b.image;
+    }
+  } else {
+    document.getElementById("bannerFormTitle").innerText = "Tambah Banner Baru";
+  }
+  document.getElementById("bannerFormModal").classList.remove("hidden");
+}
+
+function closeBannerFormModal() {
+  document.getElementById("bannerFormModal").classList.add("hidden");
+}
+
+function saveBannerForm() {
+  const id = document.getElementById("bannerFormId").value;
+  const title = document.getElementById("bannerFormTitleInput").value;
+  const tag = document.getElementById("bannerFormTag").value;
+  const desc = document.getElementById("bannerFormDesc").value;
+  const image = document.getElementById("bannerFormImage").value || "https://placehold.co/400x200/059669/ffffff?text=Promo";
+
+  if (!title) return alert("Judul banner tidak boleh kosong!");
+
+  let banners = getBanners();
+  if (id) {
+    banners = banners.map(b => b.id == id ? { ...b, title, tag, desc, image } : b);
+  } else {
+    banners.push({ id: Date.now(), title, tag, tagBg: "bg-emerald-500 text-white", desc, image });
+  }
+
+  saveBanners(banners);
+  closeBannerFormModal();
+  renderBanners();
+}
+
+function deleteBanner(id) {
+  if (confirm("Hapus banner ini?")) {
+    let banners = getBanners();
+    banners = banners.filter(b => b.id !== id);
+    saveBanners(banners);
+    renderBanners();
+  }
+}
+
+// 2. METODE PEMBAYARAN CRUD
+function renderPayments() {
+  const grid = document.getElementById("payment-grid");
+  if (!grid) return;
+
+  const payments = getPayments();
+  grid.innerHTML = "";
+
+  payments.forEach(p => {
+    let adminBtn = isAdmin ? `
+      <div class="flex gap-1 mt-1 border-t pt-1 w-full justify-center">
+        <button onclick="openPaymentFormModal(${p.id})" class="text-[8px] bg-amber-500 text-white px-1 rounded">Edit</button>
+        <button onclick="deletePayment(${p.id})" class="text-[8px] bg-red-500 text-white px-1 rounded">Hapus</button>
+      </div>
+    ` : '';
+
+    grid.innerHTML += `
+      <div class="bg-white p-2 rounded-xl border border-gray-200/80 shadow-2xs flex flex-col items-center justify-center gap-0.5">
+        <span class="text-xs font-black ${p.color || 'text-emerald-700'} tracking-tighter">${p.name}</span>
+        <span class="text-[9px] text-gray-500 font-medium">${p.sub}</span>
+        ${adminBtn}
+      </div>
+    `;
+  });
+}
+
+function openPaymentFormModal(id = null) {
+  document.getElementById("paymentFormId").value = "";
+  document.getElementById("paymentFormName").value = "";
+  document.getElementById("paymentFormSub").value = "";
+  document.getElementById("paymentFormColor").value = "text-emerald-700";
+
+  if (id) {
+    const payments = getPayments();
+    const p = payments.find(item => item.id === id);
+    if (p) {
+      document.getElementById("paymentFormTitle").innerText = "Edit Metode Pembayaran";
+      document.getElementById("paymentFormId").value = p.id;
+      document.getElementById("paymentFormName").value = p.name;
+      document.getElementById("paymentFormSub").value = p.sub;
+      document.getElementById("paymentFormColor").value = p.color || "text-emerald-700";
+    }
+  } else {
+    document.getElementById("paymentFormTitle").innerText = "Tambah Metode Pembayaran";
+  }
+  document.getElementById("paymentFormModal").classList.remove("hidden");
+}
+
+function closePaymentFormModal() {
+  document.getElementById("paymentFormModal").classList.add("hidden");
+}
+
+function savePaymentForm() {
+  const id = document.getElementById("paymentFormId").value;
+  const name = document.getElementById("paymentFormName").value;
+  const sub = document.getElementById("paymentFormSub").value;
+  const color = document.getElementById("paymentFormColor").value || "text-emerald-700";
+
+  if (!name) return alert("Nama metode pembayaran wajib diisi!");
+
+  let payments = getPayments();
+  if (id) {
+    payments = payments.map(p => p.id == id ? { ...p, name, sub, color } : p);
+  } else {
+    payments.push({ id: Date.now(), name, sub, color });
+  }
+
+  savePayments(payments);
+  closePaymentFormModal();
+  renderPayments();
+}
+
+function deletePayment(id) {
+  if (confirm("Hapus metode pembayaran ini?")) {
+    let payments = getPayments();
+    payments = payments.filter(p => p.id !== id);
+    savePayments(payments);
+    renderPayments();
+  }
+}
+
+// 3. FAQ CRUD
+function renderFaqs() {
+  const container = document.getElementById("faq-list");
+  if (!container) return;
+
+  const faqs = getFaqs();
+  container.innerHTML = "";
+
+  faqs.forEach(f => {
+    const formattedAnswer = f.answer.split('\n').map(line => `<p>${line}</p>`).join('');
+    
+    let adminBtn = isAdmin ? `
+      <div class="flex gap-1 p-2 bg-gray-100 border-t justify-end">
+        <button onclick="openFaqFormModal(${f.id})" class="text-[10px] bg-amber-500 text-white font-bold px-2 py-0.5 rounded">Edit FAQ</button>
+        <button onclick="deleteFaq(${f.id})" class="text-[10px] bg-red-500 text-white font-bold px-2 py-0.5 rounded">Hapus FAQ</button>
+      </div>
+    ` : '';
+
+    container.innerHTML += `
+      <details class="group bg-gray-50 rounded-xl border border-gray-200/60 overflow-hidden transition-all duration-200">
+        <summary class="flex justify-between items-center px-3 py-2.5 cursor-pointer select-none text-xs font-bold text-gray-800 hover:bg-gray-100/80 transition">
+          <span>${f.question}</span><i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform duration-200 group-open:rotate-180 shrink-0"></i>
+        </summary>
+        <div class="px-3 pb-3 pt-1 text-[11px] text-gray-600 border-t border-gray-200/40 leading-relaxed space-y-1">
+          ${formattedAnswer}
+        </div>
+        ${adminBtn}
+      </details>
+    `;
+  });
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function openFaqFormModal(id = null) {
+  document.getElementById("faqFormId").value = "";
+  document.getElementById("faqFormQuestion").value = "";
+  document.getElementById("faqFormAnswer").value = "";
+
+  if (id) {
+    const faqs = getFaqs();
+    const f = faqs.find(item => item.id === id);
+    if (f) {
+      document.getElementById("faqFormTitle").innerText = "Edit FAQ";
+      document.getElementById("faqFormId").value = f.id;
+      document.getElementById("faqFormQuestion").value = f.question;
+      document.getElementById("faqFormAnswer").value = f.answer;
+    }
+  } else {
+    document.getElementById("faqFormTitle").innerText = "Tambah FAQ Baru";
+  }
+  document.getElementById("faqFormModal").classList.remove("hidden");
+}
+
+function closeFaqFormModal() {
+  document.getElementById("faqFormModal").classList.add("hidden");
+}
+
+function saveFaqForm() {
+  const id = document.getElementById("faqFormId").value;
+  const question = document.getElementById("faqFormQuestion").value;
+  const answer = document.getElementById("faqFormAnswer").value;
+
+  if (!question || !answer) return alert("Pertanyaan dan Jawaban wajib diisi!");
+
+  let faqs = getFaqs();
+  if (id) {
+    faqs = faqs.map(f => f.id == id ? { ...f, question, answer } : f);
+  } else {
+    faqs.push({ id: Date.now(), question, answer });
+  }
+
+  saveFaqs(faqs);
+  closeFaqFormModal();
+  renderFaqs();
+}
+
+function deleteFaq(id) {
+  if (confirm("Hapus item FAQ ini?")) {
+    let faqs = getFaqs();
+    faqs = faqs.filter(f => f.id !== id);
+    saveFaqs(faqs);
+    renderFaqs();
+  }
+}
+
+// 4. RENDER & CRUD PRODUK
+function renderProducts(query = '') {
+  const grid = document.getElementById("product-grid");
+  if (!grid) return;
+
+  let products = getProducts();
+  if (query) {
+    products = products.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
+  }
+
+  grid.innerHTML = "";
+  products.forEach(p => {
+    const priceDisplay = p.price > 0 ? `Rp ${p.price.toLocaleString('id-ID')}` : 'Hubungi Admin';
+    const oldPriceDisplay = p.oldPrice > 0 ? `<span class="text-[9px] text-gray-400 line-through">Rp ${p.oldPrice.toLocaleString('id-ID')}</span>` : '';
+    
+    let adminButtons = '';
+    if (isAdmin) {
+      adminButtons = `
+        <div class="flex gap-1 mt-2 border-t pt-1.5">
+          <button onclick="openProductFormModal(${p.id})" class="w-1/2 bg-amber-500 text-white text-[10px] font-bold py-0.5 rounded hover:bg-amber-600">Edit</button>
+          <button onclick="deleteProduct(${p.id})" class="w-1/2 bg-red-500 text-white text-[10px] font-bold py-0.5 rounded hover:bg-red-600">Hapus</button>
+        </div>
+      `;
+    }
+
+    grid.innerHTML += `
+      <div class="bg-white rounded-xl border border-gray-100 p-2.5 shadow-sm flex flex-col justify-between">
+        <div>
+          <img src="${p.image}" alt="${p.name}" class="w-full h-24 object-cover rounded-lg mb-2 border border-gray-100" onerror="this.src='https://placehold.co/200x150/e2e8f0/64748b?text=${p.name}'">
+          <span class="text-[9px] font-bold text-gray-400 uppercase">${p.tag || 'Rank'}</span>
+          <h3 class="text-xs font-bold text-gray-800 line-clamp-2 leading-tight">${p.name}</h3>
+          <p class="text-[10px] text-gray-500 mt-0.5">${p.sub || 'Per-Bintang/⭐️'}</p>
+        </div>
+        <div class="mt-3">
+          <div class="flex items-baseline gap-1 mb-1.5">
+            <span class="text-xs font-black text-emerald-600">${priceDisplay}</span>
+            ${oldPriceDisplay}
+          </div>
+          ${p.price > 0 
+            ? `<button onclick="openOrderModal('${p.name}', ${p.price}, '${p.unit}')" class="w-full bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold py-1 rounded-lg text-xs border border-emerald-200">Order</button>`
+            : `<button onclick="orderViaWA('${p.name}', 0)" class="w-full bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold py-1 rounded-lg text-xs border border-emerald-200">Order</button>`
+          }
+          ${adminButtons}
         </div>
       </div>
-    </div>
-  </div>
-  <!-- START THE COPYRIGHT INFO  -->
-  <div class="footer-bottom pt-5 pb-5">
-    <div class="container">
-      <div class="row text-center text-white">
-        <div class="col-12">
-          <div class="footer-bottom__copyright">
-            &COPY; Copyright 2024 <a href="#">Rookie Joki</a> All Rights <a href="#" target="_blank">Reserved</a>
+    `;
+  });
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function filterProducts() {
+  const q = document.getElementById("searchInput").value;
+  renderProducts(q);
+}
+
+function openProductFormModal(id = null) {
+  document.getElementById("prodFormId").value = "";
+  document.getElementById("prodFormName").value = "";
+  document.getElementById("prodFormTag").value = "Rank";
+  document.getElementById("prodFormPrice").value = "";
+  document.getElementById("prodFormUnit").value = "Bintang";
+  document.getElementById("prodFormSub").value = "Per-Bintang/⭐️";
+  document.getElementById("prodFormImage").value = "";
+
+  if (id) {
+    const products = getProducts();
+    const p = products.find(item => item.id === id);
+    if (p) {
+      document.getElementById("productFormTitle").innerText = "Edit Produk";
+      document.getElementById("prodFormId").value = p.id;
+      document.getElementById("prodFormName").value = p.name;
+      document.getElementById("prodFormTag").value = p.tag || "";
+      document.getElementById("prodFormPrice").value = p.price;
+      document.getElementById("prodFormUnit").value = p.unit;
+      document.getElementById("prodFormSub").value = p.sub || "";
+      document.getElementById("prodFormImage").value = p.image;
+    }
+  } else {
+    document.getElementById("productFormTitle").innerText = "Tambah Produk Baru";
+  }
+  document.getElementById("productFormModal").classList.remove("hidden");
+}
+
+function closeProductFormModal() {
+  document.getElementById("productFormModal").classList.add("hidden");
+}
+
+function saveProductForm() {
+  const id = document.getElementById("prodFormId").value;
+  const name = document.getElementById("prodFormName").value;
+  const tag = document.getElementById("prodFormTag").value;
+  const price = parseInt(document.getElementById("prodFormPrice").value) || 0;
+  const unit = document.getElementById("prodFormUnit").value;
+  const sub = document.getElementById("prodFormSub").value;
+  const image = document.getElementById("prodFormImage").value || "https://placehold.co/200x150/e2e8f0/64748b?text=Rank";
+
+  if (!name) return alert("Nama produk tidak boleh kosong!");
+
+  let products = getProducts();
+  if (id) {
+    products = products.map(p => p.id == id ? { ...p, name, tag, price, unit, sub, image } : p);
+  } else {
+    products.push({ id: Date.now(), name, tag, price, oldPrice: 0, unit, sub, image });
+  }
+
+  saveProducts(products);
+  closeProductFormModal();
+  renderProducts();
+}
+
+function deleteProduct(id) {
+  if (confirm("Yakin ingin menghapus produk ini?")) {
+    let products = getProducts();
+    products = products.filter(p => p.id !== id);
+    saveProducts(products);
+    renderProducts();
+  }
+}
+
+// 5. RENDER & CRUD PORTFOLIO
+function tampilkanGaleri(kategori) {
+  currentFilterCategory = kategori;
+  const grid = document.getElementById("gallery-grid");
+  if (!grid) return;
+
+  let portfolio = getPortfolio();
+  if (kategori !== 'all') {
+    portfolio = portfolio.filter(item => item.kategori === kategori);
+  }
+
+  grid.innerHTML = "";
+  if (portfolio.length === 0) {
+    grid.innerHTML = `<p class="col-span-2 text-center text-xs text-gray-400 py-6">Belum ada foto.</p>`;
+    return;
+  }
+
+  portfolio.forEach(item => {
+    let adminDel = isAdmin 
+      ? `<button onclick="deletePortfolio(${item.id})" class="bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">Hapus</button>` 
+      : '';
+
+    grid.innerHTML += `
+      <div class="group relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm cursor-pointer">
+        <img src="${item.gambar}" alt="${item.judul}" 
+             onclick="openLightbox('${item.gambar}', '${item.judul}', '${item.deskripsi}')"
+             onerror="this.src='https://placehold.co/400x300/e2e8f0/64748b?text=Portfolio';"
+             class="w-full h-36 object-cover group-hover:scale-105 transition duration-300 block">
+        <div class="p-2.5 bg-white border-t border-gray-100 flex items-center justify-between">
+          <div class="truncate pr-1">
+            <h4 class="text-xs font-bold text-gray-800 truncate">${item.judul}</h4>
+            <p class="text-[9px] text-gray-400">${item.deskripsi}</p>
+          </div>
+          <div class="flex items-center">
+            <button onclick="toggleLike(event, this)" class="p-1 text-gray-400 hover:text-red-500"><i data-lucide="heart" class="w-4 h-4"></i></button>
+            ${adminDel}
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    `;
+  });
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+}
 
-<!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
-</a>
-<!-- START PART OF VIDEO CONTENT -->
-<script src="assets/vendors/js/glightbox.min.js"></script>
-<script type="text/javascript">
-const lightbox = GLightbox({
-'touchNavigation': true,
-'href': 'images/video/RookiE Joki (@rookie.joki).mp4',
-'type': 'video',
-'source': 'local', //vimeo, youtube or local
-'width': 900,
-'autoPlayVideos': 'true',
+function filterGaleri(kategori) {
+  document.querySelectorAll(".btn-filter").forEach(btn => {
+    btn.className = "btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-gray-100 text-gray-600 hover:bg-gray-200 transition";
+  });
+  const activeBtn = document.getElementById(`btn-filter-${kategori}`);
+  if (activeBtn) activeBtn.className = "btn-filter shrink-0 px-3 py-1.5 rounded-xl bg-emerald-600 text-white shadow-sm transition";
+
+  tampilkanGaleri(kategori);
+}
+
+function openPortfolioFormModal() {
+  document.getElementById("portFormTitle").value = "";
+  document.getElementById("portFormDesc").value = "";
+  document.getElementById("portFormImage").value = "";
+  document.getElementById("portfolioFormModal").classList.remove("hidden");
+}
+
+function closePortfolioFormModal() {
+  document.getElementById("portfolioFormModal").classList.add("hidden");
+}
+
+function savePortfolioForm() {
+  const judul = document.getElementById("portFormTitle").value;
+  const kategori = document.getElementById("portFormCategory").value;
+  const deskripsi = document.getElementById("portFormDesc").value;
+  const gambar = document.getElementById("portFormImage").value || "https://placehold.co/400x300/e2e8f0/64748b?text=Done";
+
+  if (!judul) return alert("Judul tidak boleh kosong!");
+
+  const list = getPortfolio();
+  list.push({ id: Date.now(), judul, kategori, deskripsi, gambar });
+  savePortfolio(list);
+  closePortfolioFormModal();
+  tampilkanGaleri(currentFilterCategory);
+}
+
+function deletePortfolio(id) {
+  if (confirm("Hapus foto portfolio ini?")) {
+    let list = getPortfolio();
+    list = list.filter(item => item.id !== id);
+    savePortfolio(list);
+    tampilkanGaleri(currentFilterCategory);
+  }
+}
+
+// 6. RENDER & CRUD SOSIAL MEDIA
+function renderSocials() {
+  const container = document.getElementById("social-grid");
+  if (!container) return;
+
+  const socials = getSocials();
+  container.innerHTML = "";
+
+  socials.forEach(s => {
+    let adminButtons = '';
+    if (isAdmin) {
+      adminButtons = `
+        <div class="absolute -top-2 -right-2 flex gap-0.5 z-20">
+          <button onclick="openSocialFormModal(${s.id})" class="bg-amber-500 text-white text-[8px] font-bold px-1 rounded shadow">Edit</button>
+          <button onclick="deleteSocial(${s.id})" class="bg-red-500 text-white text-[8px] font-bold px-1 rounded shadow">✕</button>
+        </div>
+      `;
+    }
+
+    container.innerHTML += `
+      <div class="relative group">
+        ${adminButtons}
+        <a href="${s.url}" target="_blank" class="w-9 h-9 ${s.style || 'bg-gray-100 text-gray-600'} rounded-full flex items-center justify-center transition shadow-2xs" title="${s.name}">
+          <i data-lucide="${s.icon || 'link'}" class="w-4.5 h-4.5"></i>
+        </a>
+      </div>
+    `;
+  });
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function openSocialFormModal(id = null) {
+  document.getElementById("socialFormId").value = "";
+  document.getElementById("socialFormName").value = "";
+  document.getElementById("socialFormUrl").value = "";
+  document.getElementById("socialFormIcon").value = "link";
+  document.getElementById("socialFormStyle").value = "bg-emerald-100 text-emerald-600 hover:bg-emerald-600 hover:text-white";
+
+  if (id) {
+    const socials = getSocials();
+    const s = socials.find(item => item.id === id);
+    if (s) {
+      document.getElementById("socialFormTitle").innerText = "Edit Sosial Media";
+      document.getElementById("socialFormId").value = s.id;
+      document.getElementById("socialFormName").value = s.name;
+      document.getElementById("socialFormUrl").value = s.url;
+      document.getElementById("socialFormIcon").value = s.icon;
+      document.getElementById("socialFormStyle").value = s.style || "";
+    }
+  } else {
+    document.getElementById("socialFormTitle").innerText = "Tambah Sosial Media Baru";
+  }
+  document.getElementById("socialFormModal").classList.remove("hidden");
+}
+
+function closeSocialFormModal() {
+  document.getElementById("socialFormModal").classList.add("hidden");
+}
+
+function saveSocialForm() {
+  const id = document.getElementById("socialFormId").value;
+  const name = document.getElementById("socialFormName").value;
+  const url = document.getElementById("socialFormUrl").value;
+  const icon = document.getElementById("socialFormIcon").value || "link";
+  const style = document.getElementById("socialFormStyle").value || "bg-emerald-100 text-emerald-600 hover:bg-emerald-600 hover:text-white";
+
+  if (!name || !url) return alert("Nama platform dan URL wajib diisi!");
+
+  let socials = getSocials();
+  if (id) {
+    socials = socials.map(s => s.id == id ? { ...s, name, url, icon, style } : s);
+  } else {
+    socials.push({ id: Date.now(), name, url, icon, style });
+  }
+
+  saveSocials(socials);
+  closeSocialFormModal();
+  renderSocials();
+}
+
+function deleteSocial(id) {
+  if (confirm("Hapus tautan sosial media ini?")) {
+    let socials = getSocials();
+    socials = socials.filter(s => s.id !== id);
+    saveSocials(socials);
+    renderSocials();
+  }
+}
+
+// ORDER & KALKULATOR UTILS
+let currentOrder = {};
+function openOrderModal(productName, price, unit) {
+  currentOrder = { name: productName, price, unit };
+  document.getElementById('modalProductName').innerText = productName;
+  document.getElementById('modalProductPrice').innerText = 'Rp ' + price.toLocaleString('id-ID');
+  document.getElementById('orderQuantity').value = 1;
+  updateTotalPrice();
+  document.getElementById('orderModal').classList.remove('hidden');
+}
+
+function updateTotalPrice() {
+  const quantity = parseInt(document.getElementById('orderQuantity').value) || 1;
+  const total = (currentOrder.price || 0) * quantity;
+  document.getElementById('modalTotalPrice').innerText = 'Rp ' + total.toLocaleString('id-ID');
+}
+
+document.getElementById('orderQuantity').addEventListener('input', updateTotalPrice);
+
+function processPaymentOrder() {
+  const quantity = parseInt(document.getElementById('orderQuantity').value) || 1;
+  const paymentMethod = document.getElementById('paymentMethod').value;
+  const userNote = document.getElementById('userNote').value || '-';
+  if (!paymentMethod) return alert('Pilih metode pembayaran!');
+
+  const totalPrice = currentOrder.price * quantity;
+  const message = `Halo Admin, saya ingin order Joki:\n\n` +
+    `📌 *Detail Pesanan*\n• Produk: ${currentOrder.name}\n• Jumlah: ${quantity} ${currentOrder.unit}\n• Total: Rp ${totalPrice.toLocaleString('id-ID')}\n\n` +
+    `💳 *Pembayaran*: ${paymentMethod}\n📝 *Catatan*: ${userNote}`;
+
+  window.open(`https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(message)}`, '_blank');
+}
+
+function toggleCalcModal(show) {
+  document.getElementById("calcModal").classList.toggle("hidden", !show);
+}
+
+function switchCalcTab(type) {
+  document.getElementById("calcRankContent").classList.toggle("hidden", type !== 'rank');
+  document.getElementById("calcWrContent").classList.toggle("hidden", type !== 'wr');
+}
+
+function hitungHargaRank() {
+  const harga = parseInt(document.getElementById("tierRank").value) || 0;
+  const bintang = parseInt(document.getElementById("jumlahBintang").value) || 0;
+  document.getElementById("outputHargaRank").innerText = "Rp" + (harga * bintang).toLocaleString("id-ID");
+}
+
+function hitungWr() {
+  const match = parseFloat(document.getElementById("totalMatch").value) || 0;
+  const wrNow = parseFloat(document.getElementById("wrSaatIni").value) || 0;
+  const wrTarget = parseFloat(document.getElementById("targetWr").value) || 0;
+  if (wrTarget <= wrNow) return;
+  const win = Math.ceil(((wrTarget * match) - (100 * (wrNow / 100) * match)) / (100 - wrTarget));
+  document.getElementById("outputMatchDibutuhkan").innerText = win + " Win-Streak";
+}
+
+function orderWaRank() {
+  const tier = document.getElementById("tierRank").options[document.getElementById("tierRank").selectedIndex].text;
+  const total = document.getElementById("outputHargaRank").innerText;
+  window.open(`https://wa.me/${NOMOR_WA}?text=${encodeURIComponent('Order Joki Rank: ' + tier + ' Total: ' + total)}`, '_blank');
+}
+
+function orderWaWr() {
+  const total = document.getElementById("outputMatchDibutuhkan").innerText;
+  window.open(`https://wa.me/${NOMOR_WA}?text=${encodeURIComponent('Order Target WR: ' + total)}`, '_blank');
+}
+
+function orderViaWA(layanan, harga) {
+  window.open(`https://wa.me/${NOMOR_WA}?text=${encodeURIComponent('Order Joki: ' + layanan)}`, '_blank');
+}
+
+function openLightbox(src, title, desc) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal-title').innerText = title;
+  document.getElementById('modal-desc').innerText = desc;
+  document.getElementById('promo-modal').classList.remove('hidden');
+  document.getElementById('promo-modal').classList.add('flex');
+}
+
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('promo-modal').classList.add('hidden');
+});
+
+function toggleLike(e, el) {
+  e.stopPropagation();
+  el.querySelector('[data-lucide="heart"]').classList.toggle("text-red-500");
+}
+
+// INIT
+document.addEventListener('DOMContentLoaded', () => {
+  renderUI();
 });
 </script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<!-- END PART OF VIDEO CONTENT -->
 </body>
 </html>
