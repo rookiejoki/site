@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rookie Joki - Penafian & Ketentuan</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-200 text-gray-800 font-sans flex justify-center min-h-screen">
+
+  <!-- WRAPPER MOBILE FRAME (Max-Width 430px) -->
+  <div class="w-full max-w-[430px] bg-white min-h-screen shadow-2xl relative flex flex-col border-x border-gray-300 pb-16">
+
+    <!-- TOP BAR -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="p-1.5 -ml-1.5 text-gray-700 hover:bg-gray-100 rounded-full transition">
+        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+      </a>
+      <h1 class="text-sm font-bold text-gray-800 truncate px-2">Penafian (Disclaimer)</h1>
+      <!-- Tombol Admin Login / Logout -->
+      <button id="admin-auth-btn" onclick="toggleAdminModal()" class="p-1.5 -mr-1.5 text-gray-500 hover:text-emerald-600 hover:bg-gray-100 rounded-full transition" title="Login Admin">
+        <i data-lucide="lock" class="w-5 h-5"></i>
+      </button>
+    </header>
+
+    <!-- BAR STATUS ADMIN (Hanya Tampil Saat Logged In) -->
+    <div id="admin-bar" class="hidden bg-emerald-700 text-white px-4 py-2 flex items-center justify-between text-xs font-semibold shadow-inner">
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-300"></i>
+        Mode Administrator Aktif
+      </span>
+      <button onclick="logoutAdmin()" class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded text-[10px] transition">
+        Logout
+      </button>
+    </div>
+
+    <main class="flex-1 space-y-5 p-4 text-xs text-gray-600 leading-relaxed">
+
+      <!-- HEADER INFO -->
+      <section class="bg-emerald-50 rounded-2xl p-4 border border-emerald-100 space-y-2 relative">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+            <i data-lucide="shield-alert" class="w-5 h-5 text-emerald-600"></i>
+            <span>Informasi Hukum</span>
+          </div>
+          <button onclick="editHeaderInfo()" class="admin-only hidden p-1 text-emerald-700 hover:bg-emerald-100 rounded">
+            <i data-lucide="pencil" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <p id="header-desc" class="text-[11px] text-emerald-900 leading-relaxed"></p>
+        <span id="header-updated" class="text-[10px] text-gray-400 block pt-1 border-t border-emerald-200/60"></span>
+      </section>
+
+      <!-- ISI DISCLAIMER & KETENTUAN -->
+      <section class="space-y-6">
+
+        <!-- KELOMPOK 1: KEBIJAKAN PRIVASI -->
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <div class="flex-1 flex justify-center">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Kebijakan Privasi
+              </span>
+            </div>
+            <button onclick="openPointModal('PRIVACY')" class="admin-only hidden bg-emerald-600 text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+              <i data-lucide="plus" class="w-3 h-3"></i> Tambah
+            </button>
+          </div>
+
+          <p id="privacy-intro" class="text-gray-600 leading-relaxed"></p>
+
+          <div id="privacy-list" class="space-y-3"></div>
+        </div>
+
+        <hr class="border-gray-200" />
+
+        <!-- KELOMPOK 2: SYARAT & KETENTUAN -->
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <div class="flex-1 flex justify-center">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Syarat & Ketentuan
+              </span>
+            </div>
+            <button onclick="openPointModal('TERMS')" class="admin-only hidden bg-emerald-600 text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+              <i data-lucide="plus" class="w-3 h-3"></i> Tambah
+            </button>
+          </div>
+
+          <p id="terms-intro" class="text-gray-600 leading-relaxed"></p>
+
+          <div id="terms-list" class="space-y-3"></div>
+        </div>
+
+      </section>
+
+      <!-- KONTAK CS -->
+      <section class="bg-gray-50 p-3.5 rounded-xl border border-gray-100 flex items-center justify-between gap-2 mt-6">
+        <div>
+          <h4 id="cs-title" class="font-bold text-gray-800 text-[11px]"></h4>
+          <p id="cs-sub" class="text-[10px] text-gray-500"></p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a id="cs-link" href="#" target="_blank" class="bg-emerald-600 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg shrink-0 hover:bg-emerald-700 transition">
+            Kirim Pesan
+          </a>
+          <button onclick="editCSModal()" class="admin-only hidden p-1.5 text-gray-600 hover:bg-gray-200 rounded">
+            <i data-lucide="pencil" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER SOSIAL MEDIA -->
+    <footer class="bg-gray-50 border-t border-gray-100 p-4 text-center space-y-3">
+      <div class="space-y-0.5">
+        <p class="text-[10px] text-gray-500">Temukan kami di:</p>
+      </div>
+
+      <!-- Icon Sosial Media -->
+      <div class="flex justify-center items-center gap-3 pt-1">
+        <a id="soc-wa" href="#" target="_blank" class="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition shadow-sm" title="WhatsApp">
+          <i data-lucide="message-circle" class="w-4.5 h-4.5"></i>
+        </a>
+        <a id="soc-ig" href="#" target="_blank" class="w-9 h-9 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition shadow-sm" title="Instagram">
+          <i data-lucide="camera" class="w-4.5 h-4.5"></i>
+        </a>
+        <a id="soc-tiktok" href="#" target="_blank" class="w-9 h-9 bg-gray-200 text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-800 hover:text-white transition shadow-sm" title="TikTok">
+          <i data-lucide="music-2" class="w-4.5 h-4.5"></i>
+        </a>
+        <a id="soc-threads" href="#" target="_blank" class="w-9 h-9 bg-gray-400 text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-500 hover:text-white transition shadow-sm" title="Threads">
+          <i data-lucide="at-sign" class="w-4.5 h-4.5"></i>
+        </a>
+        <button onclick="editSocialModal()" class="admin-only hidden p-2 bg-gray-200 rounded-full hover:bg-gray-300">
+          <i data-lucide="pencil" class="w-3.5 h-3.5 text-gray-700"></i>
+        </button>
+      </div>
+
+      <p class="text-[9px] text-gray-400 font-medium">© 2021 Rookie Joki. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- BOTTOM NAVIGATION -->
+<nav class="fixed bottom-0 w-full max-w-[430px] bg-white border-t border-gray-200 flex justify-around py-2 z-30">
+<a href="index.html" class="flex flex-col items-center text-emerald-600 gap-0.5"><i data-lucide="home" class="w-5 h-5"></i><span class="text-[10px] font-bold">Beranda</span></a>
+<a href="rookie.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="gamepad" class="w-5 h-5"></i><span class="text-[10px] font-medium">Rookie</span></a>
+<a href="testimoni.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="handshake" class="w-5 h-5"></i><span class="text-[10px] font-medium">Testimoni</span></a>
+<a href="disclaimer.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="form" class="w-5 h-5"></i><span class="text-[10px] font-medium">Disclaimer</span></a>
+<a href="build.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5"><i data-lucide="notebook" class="w-5 h-5"></i><span class="text-[10px] font-medium">Blog</span></a>
+</nav>
+
+  </div>
+
+  <!-- MODAL LOGIN ADMIN (PIN TOKEN) -->
+  <div id="login-modal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden p-4">
+    <div class="bg-white rounded-2xl w-full max-w-xs p-5 space-y-4 shadow-xl">
+      <div class="flex justify-between items-center border-b pb-2">
+        <h3 class="font-bold text-gray-800 text-sm flex items-center gap-1.5">
+          <i data-lucide="lock" class="w-4 h-4 text-emerald-600"></i> Akses Administrator
+        </h3>
+        <button onclick="toggleAdminModal()" class="text-gray-400 hover:text-gray-600">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <form onsubmit="handleLogin(event)" class="space-y-3">
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Masukkan PIN / Token Admin</label>
+          <input type="password" id="login-pin" required maxlength="10" class="w-full text-center text-sm tracking-widest p-2 border rounded-lg focus:outline-none focus:border-emerald-600" placeholder="••••••">
+        </div>
+        <p id="login-error" class="text-[10px] text-red-500 text-center hidden">PIN / Token Administrator Salah!</p>
+        <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-2 text-xs rounded-lg hover:bg-emerald-700 transition">
+          Verifikasi PIN
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL FORM CRUD POIN -->
+  <div id="point-modal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden p-4">
+    <div class="bg-white rounded-2xl w-full max-w-sm p-5 space-y-4 shadow-xl max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b pb-2">
+        <h3 id="point-modal-title" class="font-bold text-gray-800 text-sm">Kelola Poin</h3>
+        <button onclick="closePointModal()" class="text-gray-400 hover:text-gray-600">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <form onsubmit="savePoint(event)" class="space-y-3">
+        <input type="hidden" id="point-category">
+        <input type="hidden" id="point-id">
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Judul Poin</label>
+          <input type="text" id="point-title" required class="w-full text-xs p-2 border rounded-lg focus:outline-none focus:border-emerald-600" placeholder="Contoh: Penggunaan Cookies">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Deskripsi Poin</label>
+          <textarea id="point-content" rows="4" required class="w-full text-xs p-2 border rounded-lg focus:outline-none focus:border-emerald-600" placeholder="Tuliskan isi detail poin di sini..."></textarea>
+        </div>
+        <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-2 text-xs rounded-lg hover:bg-emerald-700 transition">
+          Simpan Poin
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL EDIT GENERIC (Header, CS, Social) -->
+  <div id="generic-modal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden p-4">
+    <div class="bg-white rounded-2xl w-full max-w-sm p-5 space-y-4 shadow-xl">
+      <div class="flex justify-between items-center border-b pb-2">
+        <h3 id="generic-modal-title" class="font-bold text-gray-800 text-sm">Edit Data</h3>
+        <button onclick="closeGenericModal()" class="text-gray-400 hover:text-gray-600">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div id="generic-modal-body" class="space-y-3"></div>
+    </div>
+  </div>
+
+  <script>
+    // PIN ADMIN LEADERBOARD
+    const ADMIN_PIN = "050982";
+
+    // DATA INITIAL DEFAULT
+    const defaultData = {
+      header: {
+        desc: "Syarat, ketentuan, dan batas tanggung jawab terkait penggunaan informasi serta jasa di platform Rookie Joki.",
+        updated: "Terakhir Diperbarui: 30 Agustus 2026"
+      },
+      privacyIntro: "Di Rookie Joki, yang dapat diakses melalui platform resmi kami, salah satu prioritas utama kami adalah menjaga privasi pengunjung. Dokumen Kebijakan Privasi ini berisi jenis informasi yang dikumpulkan dan dicatat oleh situs kami serta bagaimana kami menggunakannya. Jika Anda memiliki pertanyaan tambahan, jangan ragu untuk menghubungi tim kami.",
+      privacyPoints: [
+        { id: 1, title: "Informasi Umum & Log File", content: "Kami mengikuti prosedur standar menggunakan file log. Informasi yang dikumpulkan mencakup alamat IP, jenis browser, ISP, tanggal/waktu, dan halaman rujukan. Informasi ini tidak terhubung dengan data pribadi yang dapat mengidentifikasi Anda secara langsung, melainkan digunakan untuk menganalisis tren dan mengelola situs." },
+        { id: 2, title: "Penggunaan Cookies", content: "Situs kami menggunakan cookie untuk menyimpan informasi preferensi pengunjung dan halaman yang diakses. Data ini kami manfaatkan untuk mengoptimalkan pengalaman pengguna dengan menyesuaikan konten halaman web secara berkala." },
+        { id: 3, title: "Kebijakan Pihak Ketiga", content: "Kebijakan Privasi kami tidak berlaku untuk pengiklan atau situs web luar lainnya. Kami menyarankan Anda untuk membaca masing-masing Kebijakan Privasi dari pihak ketiga tersebut. Anda juga berhak menonaktifkan cookie melalui pengaturan browser Anda." },
+        { id: 4, title: "Perlindungan Informasi Anak", content: "Kami tidak secara sengaja mengumpulkan informasi identifikasi pribadi dari anak-anak di bawah umur. Jika Anda menemukan anak Anda memberikan informasi pribadi di situs kami, segera hubungi kami agar data tersebut dapat langsung dihapus dari catatan kami." },
+        { id: 5, title: "Persetujuan Pengguna", content: "Dengan mengakses dan menggunakan situs web kami, Anda dengan ini menyetujui Kebijakan Privasi kami serta terikat pada seluruh syarat dan ketentuannya." }
+      ],
+      termsIntro: "Sebelum mengakses situs ini lebih jauh, pastikan Anda telah membaca dan memahami ketentuan yang berlaku. Dengan menggunakan layanan, fitur, atau aplikasi di situs Rookie Joki, Anda dianggap telah menyetujui seluruh syarat di bawah ini.",
+      termsPoints: [
+        { id: 1, title: "1. Definisi", content: "Kami: Pemilik dan pengelola resmi situs Rookie Joki.\nAnda / Pengguna: Setiap individu yang mengakses dan menggunakan jasa kami.\nLayanan: Seluruh jasa joki, fitur kalkulator, informasi, dan aplikasi yang kami sediakan.\nKonten: Teks, gambar, harga, logo, dan materi visual yang ditampilkan di situs ini." },
+        { id: 2, title: "2. Layanan & Tanggung Jawab", content: "Informasi harga dan estimasi waktu ditampilkan sesuai kondisi operasional terbaru.\nPengguna bertanggung jawab penuh atas keakuratan data akun in-game yang diberikan saat pemesanan.\nRookie Joki berkomitmen menjaga keamanan akun Anda selama proses pengerjaan jasa joki berlangsung." },
+        { id: 3, title: "3. Penggunaan Layanan & Jasa", content: "Pengguna dilarang melakukan tindakan penyalahgunaan layanan, penyebaran informasi palsu, maupun tindakan ilegal lainnya yang merugikan pihak Rookie Joki atau pengguna lain." }
+      ],
+      cs: {
+        title: "Ada Pertanyaan?",
+        sub: "Hubungi tim kami via WhatsApp.",
+        link: "https://wa.me/628989921788"
+      },
+      socials: {
+        wa: "https://wa.me/6285266558018",
+        ig: "https://instagram.com/",
+        tiktok: "https://tiktok.com/",
+        threads: "https://threads.com/"
+      }
+    };
+
+    // STORAGE DATA ACCESS
+    function getAppData() {
+      const stored = localStorage.getItem("rookie_disclaimer_data");
+      if (!stored) {
+        localStorage.setItem("rookie_disclaimer_data", JSON.stringify(defaultData));
+        return defaultData;
+      }
+      return JSON.parse(stored);
+    }
+
+    function saveAppData(data) {
+      localStorage.setItem("rookie_disclaimer_data", JSON.stringify(data));
+      renderData();
+    }
+
+    // AUTH ADMIN CHECK
+    function isAdminLoggedIn() {
+      return localStorage.getItem("rookie_admin_logged") === "true";
+    }
+
+    function updateAdminUI() {
+      const logged = isAdminLoggedIn();
+      const adminBar = document.getElementById("admin-bar");
+      const authBtn = document.getElementById("admin-auth-btn");
+      const adminElements = document.querySelectorAll(".admin-only");
+
+      if (logged) {
+        adminBar.classList.remove("hidden");
+        authBtn.innerHTML = '<i data-lucide="unlock" class="w-5 h-5 text-emerald-600"></i>';
+        adminElements.forEach(el => el.classList.remove("hidden"));
+      } else {
+        adminBar.classList.add("hidden");
+        authBtn.innerHTML = '<i data-lucide="lock" class="w-5 h-5"></i>';
+        adminElements.forEach(el => el.classList.add("hidden"));
+      }
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function toggleAdminModal() {
+      if (isAdminLoggedIn()) {
+        logoutAdmin();
+      } else {
+        document.getElementById("login-pin").value = "";
+        document.getElementById("login-error").classList.add("hidden");
+        document.getElementById("login-modal").classList.toggle("hidden");
+      }
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const pin = document.getElementById("login-pin").value;
+      if (pin === ADMIN_PIN) {
+        localStorage.setItem("rookie_admin_logged", "true");
+        document.getElementById("login-modal").classList.add("hidden");
+        document.getElementById("login-error").classList.add("hidden");
+        updateAdminUI();
+      } else {
+        document.getElementById("login-error").classList.remove("hidden");
+      }
+    }
+
+    function logoutAdmin() {
+      localStorage.removeItem("rookie_admin_logged");
+      updateAdminUI();
+    }
+
+    // RENDER DATA TO HTML
+    function renderData() {
+      const data = getAppData();
+
+      // Header Info
+      document.getElementById("header-desc").textContent = data.header.desc;
+      document.getElementById("header-updated").textContent = data.header.updated;
+
+      // Privacy Section
+      document.getElementById("privacy-intro").textContent = data.privacyIntro;
+      const privacyList = document.getElementById("privacy-list");
+      privacyList.innerHTML = "";
+      data.privacyPoints.forEach((item) => {
+        privacyList.innerHTML += `
+          <div class="space-y-1 relative group bg-gray-50/50 p-2 rounded-lg border border-transparent hover:border-gray-200">
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-gray-800 text-xs flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                ${item.title}
+              </h3>
+              <div class="admin-only hidden flex gap-1 shrink-0">
+                <button onclick="openPointModal('PRIVACY', ${item.id})" class="p-1 text-blue-600 hover:bg-blue-50 rounded"><i data-lucide="pencil" class="w-3 h-3"></i></button>
+                <button onclick="deletePoint('PRIVACY', ${item.id})" class="p-1 text-red-600 hover:bg-red-50 rounded"><i data-lucide="trash-2" class="w-3 h-3"></i></button>
+              </div>
+            </div>
+            <p class="pl-5 text-gray-600">${item.content}</p>
+          </div>
+        `;
+      });
+
+      // Terms Section
+      document.getElementById("terms-intro").textContent = data.termsIntro;
+      const termsList = document.getElementById("terms-list");
+      termsList.innerHTML = "";
+      data.termsPoints.forEach((item) => {
+        const lines = item.content.split('\n');
+        let formattedContent = '';
+        if (lines.length > 1) {
+          formattedContent = '<ul class="pl-5 space-y-1 text-gray-600">';
+          lines.forEach(line => {
+            formattedContent += `
+              <li class="flex items-start gap-1.5">
+                <span class="text-emerald-600 font-bold">•</span>
+                <div>${line}</div>
+              </li>`;
+          });
+          formattedContent += '</ul>';
+        } else {
+          formattedContent = `<p class="pl-5 leading-relaxed">${item.content}</p>`;
+        }
+
+        termsList.innerHTML += `
+          <div class="space-y-1.5 relative bg-gray-50/50 p-2 rounded-lg border border-transparent hover:border-gray-200">
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-gray-800 text-xs flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                ${item.title}
+              </h3>
+              <div class="admin-only hidden flex gap-1 shrink-0">
+                <button onclick="openPointModal('TERMS', ${item.id})" class="p-1 text-blue-600 hover:bg-blue-50 rounded"><i data-lucide="pencil" class="w-3 h-3"></i></button>
+                <button onclick="deletePoint('TERMS', ${item.id})" class="p-1 text-red-600 hover:bg-red-50 rounded"><i data-lucide="trash-2" class="w-3 h-3"></i></button>
+              </div>
+            </div>
+            ${formattedContent}
+          </div>
+        `;
+      });
+
+      // CS
+      document.getElementById("cs-title").textContent = data.cs.title;
+      document.getElementById("cs-sub").textContent = data.cs.sub;
+      document.getElementById("cs-link").href = data.cs.link;
+
+      // Socials
+      document.getElementById("soc-wa").href = data.socials.wa;
+      document.getElementById("soc-ig").href = data.socials.ig;
+      document.getElementById("soc-tiktok").href = data.socials.tiktok;
+      document.getElementById("soc-threads").href = data.socials.threads;
+
+      updateAdminUI();
+    }
+
+    // CRUD FUNCTIONS FOR PRIVACY & TERMS POINTS
+    function openPointModal(category, id = null) {
+      const data = getAppData();
+      document.getElementById("point-category").value = category;
+      document.getElementById("point-id").value = id || "";
+      document.getElementById("point-modal-title").textContent = id ? "Edit Poin" : "Tambah Poin Baru";
+
+      if (id) {
+        const list = category === 'PRIVACY' ? data.privacyPoints : data.termsPoints;
+        const target = list.find(item => item.id === id);
+        if (target) {
+          document.getElementById("point-title").value = target.title;
+          document.getElementById("point-content").value = target.content;
+        }
+      } else {
+        document.getElementById("point-title").value = "";
+        document.getElementById("point-content").value = "";
+      }
+      document.getElementById("point-modal").classList.remove("hidden");
+    }
+
+    function closePointModal() {
+      document.getElementById("point-modal").classList.add("hidden");
+    }
+
+    function savePoint(e) {
+      e.preventDefault();
+      const data = getAppData();
+      const category = document.getElementById("point-category").value;
+      const id = document.getElementById("point-id").value;
+      const title = document.getElementById("point-title").value;
+      const content = document.getElementById("point-content").value;
+
+      const list = category === 'PRIVACY' ? data.privacyPoints : data.termsPoints;
+
+      if (id) {
+        const idx = list.findIndex(item => item.id == id);
+        if (idx !== -1) {
+          list[idx] = { id: Number(id), title, content };
+        }
+      } else {
+        const newId = Date.now();
+        list.push({ id: newId, title, content });
+      }
+
+      saveAppData(data);
+      closePointModal();
+    }
+
+    function deletePoint(category, id) {
+      if (!confirm("Apakah Anda yakin ingin menghapus poin ini?")) return;
+      const data = getAppData();
+      if (category === 'PRIVACY') {
+        data.privacyPoints = data.privacyPoints.filter(item => item.id !== id);
+      } else {
+        data.termsPoints = data.termsPoints.filter(item => item.id !== id);
+      }
+      saveAppData(data);
+    }
+
+    // EDIT HEADER INFO
+    function editHeaderInfo() {
+      const data = getAppData();
+      const body = document.getElementById("generic-modal-body");
+      document.getElementById("generic-modal-title").textContent = "Edit Header Info";
+
+      body.innerHTML = `
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Deskripsi Tambahan</label>
+          <textarea id="edit-header-desc" rows="3" class="w-full text-xs p-2 border rounded-lg">${data.header.desc}</textarea>
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Status Perbaruan</label>
+          <input type="text" id="edit-header-updated" value="${data.header.updated}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <button onclick="saveHeaderInfo()" class="w-full bg-emerald-600 text-white font-bold py-2 text-xs rounded-lg hover:bg-emerald-700">Simpan</button>
+      `;
+      document.getElementById("generic-modal").classList.remove("hidden");
+    }
+
+    function saveHeaderInfo() {
+      const data = getAppData();
+      data.header.desc = document.getElementById("edit-header-desc").value;
+      data.header.updated = document.getElementById("edit-header-updated").value;
+      saveAppData(data);
+      closeGenericModal();
+    }
+
+    // EDIT CS INFO
+    function editCSModal() {
+      const data = getAppData();
+      const body = document.getElementById("generic-modal-body");
+      document.getElementById("generic-modal-title").textContent = "Edit Kontak CS";
+
+      body.innerHTML = `
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Judul Kontak</label>
+          <input type="text" id="edit-cs-title" value="${data.cs.title}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Subjudul / Catatan</label>
+          <input type="text" id="edit-cs-sub" value="${data.cs.sub}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Tautan WhatsApp</label>
+          <input type="text" id="edit-cs-link" value="${data.cs.link}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <button onclick="saveCSInfo()" class="w-full bg-emerald-600 text-white font-bold py-2 text-xs rounded-lg hover:bg-emerald-700">Simpan</button>
+      `;
+      document.getElementById("generic-modal").classList.remove("hidden");
+    }
+
+    function saveCSInfo() {
+      const data = getAppData();
+      data.cs.title = document.getElementById("edit-cs-title").value;
+      data.cs.sub = document.getElementById("edit-cs-sub").value;
+      data.cs.link = document.getElementById("edit-cs-link").value;
+      saveAppData(data);
+      closeGenericModal();
+    }
+
+    // EDIT SOCIAL MEDIA
+    function editSocialModal() {
+      const data = getAppData();
+      const body = document.getElementById("generic-modal-body");
+      document.getElementById("generic-modal-title").textContent = "Edit Tautan Sosial Media";
+
+      body.innerHTML = `
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Link WhatsApp</label>
+          <input type="text" id="edit-soc-wa" value="${data.socials.wa}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Link Instagram</label>
+          <input type="text" id="edit-soc-ig" value="${data.socials.ig}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Link TikTok</label>
+          <input type="text" id="edit-soc-tiktok" value="${data.socials.tiktok}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-[10px] font-semibold text-gray-600 mb-1">Link Threads</label>
+          <input type="text" id="edit-soc-threads" value="${data.socials.threads}" class="w-full text-xs p-2 border rounded-lg">
+        </div>
+        <button onclick="saveSocialInfo()" class="w-full bg-emerald-600 text-white font-bold py-2 text-xs rounded-lg hover:bg-emerald-700">Simpan</button>
+      `;
+      document.getElementById("generic-modal").classList.remove("hidden");
+    }
+
+    function saveSocialInfo() {
+      const data = getAppData();
+      data.socials.wa = document.getElementById("edit-soc-wa").value;
+      data.socials.ig = document.getElementById("edit-soc-ig").value;
+      data.socials.tiktok = document.getElementById("edit-soc-tiktok").value;
+      data.socials.threads = document.getElementById("edit-soc-threads").value;
+      saveAppData(data);
+      closeGenericModal();
+    }
+
+    function closeGenericModal() {
+      document.getElementById("generic-modal").classList.add("hidden");
+    }
+
+    // INITIALIZATION
+    document.addEventListener("DOMContentLoaded", function () {
+      renderData();
+    });
+  </script>
+</body>
+</html>

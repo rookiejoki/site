@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rookie Joki - Sedang Dalam Perbaikan</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-200 text-gray-800 font-sans flex justify-center min-h-screen">
+
+  <!-- WRAPPER MOBILE FRAME (Max-Width 430px) -->
+  <div class="w-full max-w-[430px] bg-white min-h-screen shadow-2xl relative flex flex-col border-x border-gray-300 pb-16">
+
+    <!-- TOP BAR -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="p-1.5 -ml-1.5 text-gray-700 hover:bg-gray-100 rounded-full transition">
+        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+      </a>
+      <h1 class="text-sm font-bold text-gray-800 truncate px-2">Status Halaman</h1>
+      <div class="w-8"></div>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center justify-center p-6 text-center space-y-5">
+
+      <!-- HERO ICON / ILLUSTRATION BADGE -->
+      <div class="relative">
+        <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center shadow-inner">
+          <i data-lucide="wrench" class="w-10 h-10 animate-pulse"></i>
+        </div>
+        <span class="absolute -bottom-1 -right-1 bg-amber-400 text-white p-1.5 rounded-full shadow-md">
+          <i data-lucide="hard-hat" class="w-4 h-4"></i>
+        </span>
+      </div>
+
+      <!-- TEXT CONTENT -->
+      <div class="space-y-2 max-w-xs">
+        <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+          Sedang Dibangun atau Ditingkatkan
+        </span>
+        <h2 class="text-base font-bold text-gray-800">Halaman sedang dalam proses Pembangunan/Peningkatan</h2>
+        <p class="text-xs text-gray-500 leading-relaxed">
+          Halaman ini sedang dalam tahap pembangunan, pengembangan dan proses optimasi oleh tim Rookie Joki agar memberikan pengalaman terbaik untuk Anda.
+        </p>
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="w-full space-y-2 pt-2">
+        <a href="index.html" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-sm transition flex items-center justify-center gap-2">
+          <i data-lucide="home" class="w-4 h-4"></i>
+          Kembali ke Beranda
+        </a>
+        <a href="https://wa.me/628989921788" target="_blank" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          Tanya CS via WhatsApp
+        </a>
+      </div>
+
+    </main>
+
+    <!-- FOOTER SOSIAL MEDIA -->
+    <footer class="bg-gray-50 border-t border-gray-100 p-4 text-center space-y-3">
+      <div class="space-y-0.5">
+        <p class="text-[10px] text-gray-500">Temukan kami di:</p>
+      </div>
+
+      <div class="flex justify-center items-center gap-3 pt-1">
+        <a href="https://wa.me/6285266558018" target="_blank" class="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition shadow-sm" title="WhatsApp">
+          <i data-lucide="message-circle" class="w-4.5 h-4.5"></i>
+        </a>
+        <a href="https://instagram.com/" target="_blank" class="w-9 h-9 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition shadow-sm" title="Instagram">
+          <i data-lucide="camera" class="w-4.5 h-4.5"></i>
+        </a>
+        <a href="https://tiktok.com/" target="_blank" class="w-9 h-9 bg-gray-200 text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-800 hover:text-white transition shadow-sm" title="TikTok">
+          <i data-lucide="music-2" class="w-4.5 h-4.5"></i>
+        </a>
+        <a href="https://threads.com/" target="_blank" class="w-9 h-9 bg-gray-400 text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-500 hover:text-white transition shadow-sm" title="Threads">
+          <i data-lucide="at-sign" class="w-4.5 h-4.5"></i>
+        </a>
+      </div>
+
+      <p class="text-[9px] text-gray-400 font-medium">© 2021 Rookie Joki. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="fixed bottom-0 w-full max-w-[430px] bg-white border-t border-gray-200 flex justify-around py-2 z-30">
+      <a href="index.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5">
+        <i data-lucide="home" class="w-5 h-5"></i>
+        <span class="text-[10px] font-medium">Beranda</span>
+      </a>
+      <a href="rookie.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5">
+        <i data-lucide="gamepad" class="w-5 h-5"></i>
+        <span class="text-[10px] font-medium">Rookie</span>
+      </a>
+      <a href="testimoni.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5">
+        <i data-lucide="handshake" class="w-5 h-5"></i>
+        <span class="text-[10px] font-medium">Testimoni</span>
+      </a>
+      <a href="disclaimer.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5">
+        <i data-lucide="shield-alert" class="w-5 h-5"></i>
+        <span class="text-[10px] font-medium">Disclaimer</span>
+      </a>
+      <a href="build.html" class="flex flex-col items-center text-gray-400 hover:text-emerald-600 gap-0.5">
+        <i data-lucide="notebook" class="w-5 h-5"></i>
+        <span class="text-[10px] font-medium">Blog</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
