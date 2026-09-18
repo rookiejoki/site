@@ -6289,6 +6289,13 @@
       "actionType": "modal",
       "target": "openBlogModal",
       "active": false
+    },
+    {
+      "label": "Profile",
+      "icon": "user-lock",
+      "actionType": "scroll",
+      "target": "",
+      "active": ""
     }
   ],
   "faqs": [
