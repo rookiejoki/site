@@ -4,9 +4,9 @@
     "adminPhone": "6285266558018"
   },
   "admin": {
-    "id": 1,
     "username": "admin",
-    "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d"
+    "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d",
+    "id": 1
   },
   "header": {
     "title": "Rookie Joki",
