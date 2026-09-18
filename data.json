@@ -6207,7 +6207,7 @@
       "badge": "Otomatis",
       "description": "Scan menggunakan Bank (BCA, Mandiri, BRI, BNI) atau E-Wallet (GoPay, OVO, DANA, ShopeePay).",
       "qrImageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ROOKIEJOKI-QRIS-DEMO",
-      "merchantName": "NMK: ROOKIE JOKI OFFICIAL"
+      "merchantName": "NMK: ROOKIE JOKI"
     },
     "accounts": [
       {
