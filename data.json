@@ -6297,14 +6297,14 @@
       "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
-      "id": 9,
-      "question": "Metode pembayaran apa saja yang didukung?",
-      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
-    },
-    {
       "id": 2,
       "question": "Informasi Penting Sebelum Order",
       "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
+    },
+    {
+      "id": 9,
+      "question": "Metode pembayaran apa saja yang didukung?",
+      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
     },
     {
       "id": 10,
