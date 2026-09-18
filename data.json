@@ -6307,14 +6307,14 @@
       "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
     },
     {
-      "id": 11,
-      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
-      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
-    },
-    {
       "id": 2,
       "question": "Informasi Penting Sebelum Order",
       "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
+    },
+    {
+      "id": 11,
+      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
+      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
     },
     {
       "id": 1,
