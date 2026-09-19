@@ -6545,6 +6545,13 @@
       "actionType": "modal",
       "target": "openBlogModal",
       "active": false
+    },
+    {
+      "label": "Profile",
+      "icon": "person",
+      "actionType": "scroll",
+      "target": "#",
+      "active": ""
     }
   ],
   "faqs": [
