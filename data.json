@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "adminPhone": "6285266558018"
   },
   "admin": {
@@ -57,6 +57,13 @@
       "badgeColor": "bg-amber-500",
       "title": "Paket Mythic Placement Termurah",
       "desc": "Dapatkan harga khusus paket Mythic Glory & Immortal hari ini."
+    },
+    {
+      "image": "",
+      "badgeText": "PROMO",
+      "badgeColor": "bg-brand-blue",
+      "title": "",
+      "desc": ""
     }
   ],
   "pricelist": {
@@ -457,6 +464,14 @@
       "tag": "Joki Gendong VIP",
       "worker": "Worker: Team Omega",
       "status": "Full Squad"
+    },
+    {
+      "image": "",
+      "title": "",
+      "desc": "",
+      "tag": "TESTI",
+      "status": "100% Clean",
+      "worker": "Worker Pro"
     }
   ],
   "aboutUs": {
@@ -504,7 +519,9 @@
       }
     ],
     "ctaTitle": "Butuh bantuan atau ingin pesan?",
-    "ctaText": "Pilih paket layanan atau hubungi admin Rookie Joki melalui WhatsApp."
+    "ctaText": "Pilih paket layanan atau hubungi admin Rookie Joki melalui WhatsApp.",
+    "heroImage": "",
+    "heroVideo": ""
   },
   "disclaimer": {
     "intro": "Mohon baca ketentuan berikut sebelum menggunakan layanan joki dari Rookie Joki.",
@@ -531,7 +548,9 @@
         "value": "Tanggung jawab pelanggan",
         "danger": false
       }
-    ]
+    ],
+    "mediaImage": "",
+    "mediaVideo": ""
   },
   "footer": {
     "socialTitle": "Ikuti Sosial Media Kami",
@@ -564,7 +583,9 @@
       }
     ],
     "line1": "Rookie Joki © 2021-2026. All Rights Reserved.",
-    "line2": "Jasa Joki Rank Mobile Legends Terpercaya Se-Nusantara."
+    "line2": "Jasa Joki Rank Mobile Legends Terpercaya Se-Nusantara.",
+    "mediaImage": "",
+    "mediaVideo": ""
   },
   "blogPosts": [
     {
@@ -5698,6 +5719,13 @@
       "wr": 65,
       "match": 162,
       "badge": "Top Worker"
+    },
+    {
+      "rank": 501,
+      "name": "",
+      "wr": 0,
+      "match": 0,
+      "badge": ""
     }
   ],
   "orders": [
@@ -5709,7 +5737,11 @@
       "worker": "Rookie_Alpha",
       "status": "On Process",
       "progress": "2/6 Jam",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "barcodeValue": "RK-1001",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1002",
@@ -5719,7 +5751,11 @@
       "worker": "Rookie_Omega",
       "status": "On Process",
       "progress": "4/5 Match",
-      "date": "30 Aug 2026"
+      "date": "30 Aug 2026",
+      "barcodeValue": "RK-1002",
+      "adminName": "admin",
+      "signedAt": "19/9/2026, 16.59.48",
+      "adminSignature": ""
     },
     {
       "id": "RK-1003",
@@ -5729,7 +5765,11 @@
       "worker": "Rookie_Omega",
       "status": "Done",
       "progress": "5/5 Win",
-      "date": "13 Sep 2026"
+      "date": "13 Sep 2026",
+      "barcodeValue": "RK-1003",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1004",
@@ -5739,7 +5779,11 @@
       "worker": "Rookie_Blitz",
       "status": "On Process",
       "progress": "4/6 Bintang",
-      "date": "9 Sep 2026"
+      "date": "9 Sep 2026",
+      "barcodeValue": "RK-1004",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1005",
@@ -5749,7 +5793,11 @@
       "worker": "Rookie_Zeta",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "1 Sep 2026"
+      "date": "1 Sep 2026",
+      "barcodeValue": "RK-1005",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1006",
@@ -5759,7 +5807,11 @@
       "worker": "Rookie_Blitz",
       "status": "Pending",
       "progress": "Menunggu Worker",
-      "date": "8 Sep 2026"
+      "date": "8 Sep 2026",
+      "barcodeValue": "RK-1006",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1007",
@@ -5769,7 +5821,11 @@
       "worker": "Rookie_Zeta",
       "status": "Done",
       "progress": "Target Tercapai",
-      "date": "15 Sep 2026"
+      "date": "15 Sep 2026",
+      "barcodeValue": "RK-1007",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1008",
@@ -5779,7 +5835,11 @@
       "worker": "Rookie_Apex",
       "status": "Done",
       "progress": "Target Tercapai",
-      "date": "30 Aug 2026"
+      "date": "30 Aug 2026",
+      "barcodeValue": "RK-1008",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1009",
@@ -5789,7 +5849,11 @@
       "worker": "Rookie_Blitz",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "8 Sep 2026"
+      "date": "8 Sep 2026",
+      "barcodeValue": "RK-1009",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1010",
@@ -5799,7 +5863,11 @@
       "worker": "Rookie_Nexus",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "2 Sep 2026"
+      "date": "2 Sep 2026",
+      "barcodeValue": "RK-1010",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1011",
@@ -5809,7 +5877,11 @@
       "worker": "Rookie_Blitz",
       "status": "On Process",
       "progress": "6/7 Bintang",
-      "date": "13 Sep 2026"
+      "date": "13 Sep 2026",
+      "barcodeValue": "RK-1011",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1012",
@@ -5819,7 +5891,11 @@
       "worker": "Rookie_Nexus",
       "status": "On Process",
       "progress": "6/9 Bintang",
-      "date": "1 Sep 2026"
+      "date": "1 Sep 2026",
+      "barcodeValue": "RK-1012",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1013",
@@ -5829,7 +5905,11 @@
       "worker": "Rookie_Apex",
       "status": "On Process",
       "progress": "3/4 Jam",
-      "date": "10 Sep 2026"
+      "date": "10 Sep 2026",
+      "barcodeValue": "RK-1013",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1014",
@@ -5839,7 +5919,11 @@
       "worker": "Rookie_Zeta",
       "status": "On Process",
       "progress": "4/7 Bintang",
-      "date": "27 Aug 2026"
+      "date": "27 Aug 2026",
+      "barcodeValue": "RK-1014",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1015",
@@ -5849,7 +5933,11 @@
       "worker": "Rookie_Apex",
       "status": "On Process",
       "progress": "4/7 Bintang",
-      "date": "2 Sep 2026"
+      "date": "2 Sep 2026",
+      "barcodeValue": "RK-1015",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1016",
@@ -5859,7 +5947,11 @@
       "worker": "Rookie_Omega",
       "status": "Done",
       "progress": "Target Tercapai",
-      "date": "27 Aug 2026"
+      "date": "27 Aug 2026",
+      "barcodeValue": "RK-1016",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1017",
@@ -5869,7 +5961,11 @@
       "worker": "Rookie_Hyper",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "11 Sep 2026"
+      "date": "11 Sep 2026",
+      "barcodeValue": "RK-1017",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1018",
@@ -5879,7 +5975,11 @@
       "worker": "Rookie_Alpha",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "16 Sep 2026"
+      "date": "16 Sep 2026",
+      "barcodeValue": "RK-1018",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1019",
@@ -5889,7 +5989,11 @@
       "worker": "Rookie_Omega",
       "status": "On Process",
       "progress": "7/9 Bintang",
-      "date": "15 Sep 2026"
+      "date": "15 Sep 2026",
+      "barcodeValue": "RK-1019",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1020",
@@ -5899,7 +6003,11 @@
       "worker": "Rookie_Blitz",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "12 Sep 2026"
+      "date": "12 Sep 2026",
+      "barcodeValue": "RK-1020",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1021",
@@ -5909,7 +6017,11 @@
       "worker": "Rookie_Kaiser",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "9 Sep 2026"
+      "date": "9 Sep 2026",
+      "barcodeValue": "RK-1021",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1022",
@@ -5919,7 +6031,11 @@
       "worker": "Rookie_Alpha",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "8 Sep 2026"
+      "date": "8 Sep 2026",
+      "barcodeValue": "RK-1022",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1023",
@@ -5929,7 +6045,11 @@
       "worker": "Rookie_Hyper",
       "status": "On Process",
       "progress": "2/4 Jam",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "barcodeValue": "RK-1023",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1024",
@@ -5939,7 +6059,11 @@
       "worker": "Rookie_Kaiser",
       "status": "On Process",
       "progress": "8/10 Jam",
-      "date": "9 Sep 2026"
+      "date": "9 Sep 2026",
+      "barcodeValue": "RK-1024",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1025",
@@ -5949,7 +6073,11 @@
       "worker": "Rookie_Shadow",
       "status": "Done",
       "progress": "Target Tercapai",
-      "date": "16 Sep 2026"
+      "date": "16 Sep 2026",
+      "barcodeValue": "RK-1025",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1026",
@@ -5959,7 +6087,11 @@
       "worker": "Rookie_Apex",
       "status": "Pending",
       "progress": "Menunggu Worker",
-      "date": "8 Sep 2026"
+      "date": "8 Sep 2026",
+      "barcodeValue": "RK-1026",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1027",
@@ -5969,7 +6101,11 @@
       "worker": "Rookie_Viper",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "barcodeValue": "RK-1027",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1028",
@@ -5979,7 +6115,11 @@
       "worker": "Rookie_Viper",
       "status": "On Process",
       "progress": "7/10 Jam",
-      "date": "28 Aug 2026"
+      "date": "28 Aug 2026",
+      "barcodeValue": "RK-1028",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1029",
@@ -5989,7 +6129,11 @@
       "worker": "Rookie_Apex",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "7 Sep 2026"
+      "date": "7 Sep 2026",
+      "barcodeValue": "RK-1029",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1030",
@@ -5999,7 +6143,11 @@
       "worker": "Rookie_Alpha",
       "status": "On Process",
       "progress": "8/9 Bintang",
-      "date": "27 Aug 2026"
+      "date": "27 Aug 2026",
+      "barcodeValue": "RK-1030",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1031",
@@ -6009,7 +6157,11 @@
       "worker": "Rookie_Shadow",
       "status": "Dibatalkan",
       "progress": "Dibatalkan oleh Pelanggan",
-      "date": "16 Sep 2026"
+      "date": "16 Sep 2026",
+      "barcodeValue": "RK-1031",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1032",
@@ -6019,7 +6171,11 @@
       "worker": "Rookie_Apex",
       "status": "Pending",
       "progress": "Menunggu Worker",
-      "date": "11 Sep 2026"
+      "date": "11 Sep 2026",
+      "barcodeValue": "RK-1032",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1033",
@@ -6029,7 +6185,11 @@
       "worker": "Rookie_Shadow",
       "status": "On Process",
       "progress": "6/10 Bintang",
-      "date": "14 Sep 2026"
+      "date": "14 Sep 2026",
+      "barcodeValue": "RK-1033",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1034",
@@ -6039,7 +6199,11 @@
       "worker": "Rookie_Omega",
       "status": "Pending",
       "progress": "Menunggu Worker",
-      "date": "7 Sep 2026"
+      "date": "7 Sep 2026",
+      "barcodeValue": "RK-1034",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1035",
@@ -6049,7 +6213,11 @@
       "worker": "Rookie_Spectre",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "15 Sep 2026"
+      "date": "15 Sep 2026",
+      "barcodeValue": "RK-1035",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1036",
@@ -6059,7 +6227,11 @@
       "worker": "Rookie_Viper",
       "status": "Pending",
       "progress": "Menunggu Konfirmasi Pembayaran",
-      "date": "13 Sep 2026"
+      "date": "13 Sep 2026",
+      "barcodeValue": "RK-1036",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1037",
@@ -6069,7 +6241,11 @@
       "worker": "Rookie_Kaiser",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "31 Aug 2026"
+      "date": "31 Aug 2026",
+      "barcodeValue": "RK-1037",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1038",
@@ -6079,7 +6255,11 @@
       "worker": "Rookie_Blitz",
       "status": "Done",
       "progress": "5/5 Win",
-      "date": "15 Sep 2026"
+      "date": "15 Sep 2026",
+      "barcodeValue": "RK-1038",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1039",
@@ -6089,7 +6269,11 @@
       "worker": "Rookie_Blitz",
       "status": "Pending",
       "progress": "Menunggu Konfirmasi Pembayaran",
-      "date": "13 Sep 2026"
+      "date": "13 Sep 2026",
+      "barcodeValue": "RK-1039",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1040",
@@ -6099,7 +6283,11 @@
       "worker": "Rookie_Kaiser",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "7 Sep 2026"
+      "date": "7 Sep 2026",
+      "barcodeValue": "RK-1040",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1041",
@@ -6109,7 +6297,11 @@
       "worker": "Rookie_Spectre",
       "status": "Done",
       "progress": "5/5 Win",
-      "date": "12 Sep 2026"
+      "date": "12 Sep 2026",
+      "barcodeValue": "RK-1041",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1042",
@@ -6119,7 +6311,11 @@
       "worker": "Rookie_Nexus",
       "status": "On Process",
       "progress": "5/7 Jam",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "barcodeValue": "RK-1042",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1043",
@@ -6129,7 +6325,11 @@
       "worker": "Rookie_Viper",
       "status": "Done",
       "progress": "5/5 Win",
-      "date": "8 Sep 2026"
+      "date": "8 Sep 2026",
+      "barcodeValue": "RK-1043",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1044",
@@ -6139,7 +6339,11 @@
       "worker": "Rookie_Viper",
       "status": "Done",
       "progress": "5/5 Win",
-      "date": "27 Aug 2026"
+      "date": "27 Aug 2026",
+      "barcodeValue": "RK-1044",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1045",
@@ -6149,7 +6353,11 @@
       "worker": "Rookie_Alpha",
       "status": "Done",
       "progress": "Selesai 100%",
-      "date": "15 Sep 2026"
+      "date": "15 Sep 2026",
+      "barcodeValue": "RK-1045",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1046",
@@ -6159,7 +6367,11 @@
       "worker": "Rookie_Apex",
       "status": "On Process",
       "progress": "5/9 Match",
-      "date": "27 Aug 2026"
+      "date": "27 Aug 2026",
+      "barcodeValue": "RK-1046",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1047",
@@ -6169,7 +6381,11 @@
       "worker": "Rookie_Blitz",
       "status": "Done",
       "progress": "Target Tercapai",
-      "date": "6 Sep 2026"
+      "date": "6 Sep 2026",
+      "barcodeValue": "RK-1047",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1048",
@@ -6179,7 +6395,11 @@
       "worker": "Rookie_Phantom",
       "status": "On Process",
       "progress": "4/5 Match",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "barcodeValue": "RK-1048",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1049",
@@ -6189,7 +6409,11 @@
       "worker": "Rookie_Zeta",
       "status": "Done",
       "progress": "10/10 Bintang",
-      "date": "14 Sep 2026"
+      "date": "14 Sep 2026",
+      "barcodeValue": "RK-1049",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-1050",
@@ -6199,7 +6423,11 @@
       "worker": "Rookie_Blitz",
       "status": "Dibatalkan",
       "progress": "Refund Diproses",
-      "date": "16 Sep 2026"
+      "date": "16 Sep 2026",
+      "barcodeValue": "RK-1050",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": ""
     },
     {
       "id": "RK-3473",
@@ -6208,7 +6436,26 @@
       "service": "Joki Rank",
       "worker": "-",
       "status": "Pending",
-      "progress": "Menunggu Worker"
+      "progress": "Menunggu Worker",
+      "barcodeValue": "RK-3473",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": "",
+      "date": ""
+    },
+    {
+      "id": "RK-3057",
+      "customer": "",
+      "phone": "",
+      "service": "Joki Rank",
+      "worker": "-",
+      "status": "Pending",
+      "progress": "Menunggu Worker",
+      "date": "19 Sep 2026",
+      "adminName": "",
+      "signedAt": "",
+      "adminSignature": "",
+      "barcodeValue": ""
     }
   ],
   "paymentMethods": {
