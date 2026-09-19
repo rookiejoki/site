@@ -6548,7 +6548,7 @@
     },
     {
       "label": "Profile",
-      "icon": "person",
+      "icon": "user-round",
       "actionType": "scroll",
       "target": "#",
       "active": ""
