@@ -6302,14 +6302,14 @@
       "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
     },
     {
-      "id": 8,
-      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
-      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
-    },
-    {
       "id": 5,
       "question": "Maksimal berapa hero yang bisa di joki?",
       "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
+    },
+    {
+      "id": 8,
+      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
+      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
       "id": 9,
