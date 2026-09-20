@@ -711,10 +711,11 @@
 
                         <div>
                             <div class="flex justify-between items-center mb-1">
-                                <label class="block font-medium text-slate-700">Jumlah Bintang / Bintang</label>
-                                <span id="starLimitHint" class="text-[10px] text-slate-400 font-medium">Bintang per divisi</span>
+                                <label for="starCount" class="block font-medium text-slate-700">Jumlah Bintang</label>
+                                <span id="starLimitHint" class="text-[10px] text-slate-500 font-medium">Min 1 &bull; Maks 25 bintang</span>
                             </div>
-                            <input type="number" id="starCount" min="1" max="100" value="5" oninput="calculateRankCost()" placeholder="Masukkan jumlah bintang..." class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-brand-blue font-mono font-bold text-slate-800">
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" maxlength="6" id="starCount" value="5" oninput="calculateRankCost()" aria-describedby="starLimitHint starLimitMsg" placeholder="Masukkan jumlah bintang..." class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-brand-blue font-mono font-bold text-slate-800">
+                            <p id="starLimitMsg" role="status" aria-live="polite" class="hidden mt-1 text-[10px] font-semibold"></p>
                         </div>
 
                         <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl flex items-center justify-between mt-2">
@@ -861,6 +862,10 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-1">
+                        <button onclick="cmsRunDiagnostics()" title="Tes Koneksi GitHub" aria-label="Tes Koneksi GitHub"
+                                class="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-700 transition-colors">
+                            <i data-lucide="activity" class="w-4 h-4"></i>
+                        </button>
                         <button onclick="cmsExportData(SITE_DATA)" title="Unduh Backup JSON" aria-label="Unduh Backup JSON"
                                 class="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-700 transition-colors">
                             <i data-lucide="download" class="w-4 h-4"></i>
@@ -890,14 +895,14 @@
     <!-- CMS ROOKIE JOKI (Data, Storage, Auth, Render, Admin Panel) -->
     <!-- Urutan load PENTING: config -> data -> store -> auth -> render -> upload -> invoice -> admin -->
     <!-- ========================================== -->
-    <script src="assets/cms-config.js"></script>
-    <script src="assets/cms-data.js"></script>
-    <script src="assets/cms-store.js"></script>
-    <script src="assets/cms-auth.js"></script>
-    <script src="assets/cms-render.js"></script>
-    <script src="assets/cms-upload.js"></script>
-    <script src="assets/cms-invoice.js"></script>
-    <script src="assets/cms-admin.js"></script>
+    <script src="assets/cms-config.js?v=20260920"></script>
+    <script src="assets/cms-data.js?v=20260920"></script>
+    <script src="assets/cms-store.js?v=20260920"></script>
+    <script src="assets/cms-auth.js?v=20260920"></script>
+    <script src="assets/cms-render.js?v=20260920"></script>
+    <script src="assets/cms-upload.js?v=20260920"></script>
+    <script src="assets/cms-invoice.js?v=20260920"></script>
+    <script src="assets/cms-admin.js?v=20260920"></script>
 
     <!-- Script Utama -->
     <script>
@@ -933,14 +938,24 @@
             const tierSelect = document.getElementById('tierSelect');
             const selectedOption = tierSelect.options[tierSelect.selectedIndex];
             const rankName = selectedOption.getAttribute('data-name') || selectedOption.text;
-            const starCount = document.getElementById('starCount').value || 1;
-            const totalCost = document.getElementById('rankTotalCost').innerText;
+
+            // Validasi ulang tepat sebelum kirim: jangan pernah kirim jumlah bintang di luar batas rank
+            const starInput = document.getElementById('starCount');
+            const limit = getCalcStarLimit();
+            const stars = parseInt(starInput.value, 10);
+            if (isNaN(stars) || stars < CALC_MIN_STARS || stars > limit) {
+                calculateRankCost();
+                showStarMsg(`Isi jumlah bintang ${CALC_MIN_STARS} - ${limit.toLocaleString('id-ID')} dulu ya.`, 'error');
+                starInput.focus();
+                return;
+            }
+            const totalCost = 'Rp ' + ((parseInt(tierSelect.value, 10) || 0) * stars).toLocaleString('id-ID');
 
             const adminPhone = '6285266558018';
             const message = `Halo Admin Rookie Joki, saya mau pesan via Kalkulator Website:\n\n` +
                             `- Layanan: *Joki Rank MLBB*\n` +
                             `- Target Rank: *${rankName}*\n` +
-                            `- Jumlah Bintang: *${starCount} Bintang*\n` +
+                            `- Jumlah Bintang: *${stars.toLocaleString('id-ID')} Bintang*\n` +
                             `- Total Biaya: *${totalCost}*\n\n` +
                             `Apakah worker ready untuk kerjakan sekarang?`;
             
@@ -1090,15 +1105,82 @@
             }
         }
 
+        // ------------------------------------------
+        // KALKULATOR RANK - BATAS JUMLAH BINTANG
+        // ------------------------------------------
+        const CALC_MIN_STARS = 1;
+
+        // Batas default per rank. Dipakai HANYA bila data CMS belum punya field "maxStars".
+        // (Nilai utama diatur di Panel Admin > Kalkulator Joki > "Maksimal Bintang")
+        function getDefaultStarLimit(rankName) {
+            const n = String(rankName || '').toLowerCase()
+                .replace(/mythical/g, 'mythic')
+                .replace(/^rank\s+/, '')
+                .replace(/\s+/g, ' ').trim();
+            if (/^(warrior|warior)\b/.test(n)) return 9;
+            if (/^elite\b/.test(n)) return 12;
+            if (/^master\b/.test(n)) return 16;
+            if (/^grand\s?master\b/.test(n)) return 25;
+            if (/^epic\b/.test(n)) return 25;
+            if (/^legend\b/.test(n)) return 25;
+            if (/^mythic\b/.test(n)) return /immortal/.test(n) ? 100000 : 25; // Mythic, Honor, Glory = 25
+            return null;
+        }
+
+        // Batas maksimal bintang untuk rank yang sedang dipilih
+        function getCalcStarLimit() {
+            const sel = document.getElementById('tierSelect');
+            const opt = sel && sel.options[sel.selectedIndex];
+            if (opt) {
+                const explicit = parseInt(opt.getAttribute('data-max-stars'), 10);
+                if (explicit >= 1) return explicit;
+                const byName = getDefaultStarLimit(opt.getAttribute('data-name') || opt.text);
+                if (byName) return byName;
+            }
+            const globalMax = (typeof SITE_DATA !== 'undefined' && SITE_DATA.calculator) ? parseInt(SITE_DATA.calculator.maxStars, 10) : NaN;
+            return globalMax >= 1 ? globalMax : 100;
+        }
+
+        function showStarMsg(text, type) {
+            const el = document.getElementById('starLimitMsg');
+            if (!el) return;
+            if (!text) { el.classList.add('hidden'); el.textContent = ''; return; }
+            el.textContent = text;
+            el.classList.remove('hidden', 'text-rose-600', 'text-amber-600');
+            el.classList.add(type === 'error' ? 'text-rose-600' : 'text-amber-600');
+        }
+
         function calculateRankCost() {
             const tierSelect = document.getElementById('tierSelect');
             const pricePerStar = parseInt(tierSelect.value) || 0;
             const starInput = document.getElementById('starCount');
-            let stars = parseInt(starInput.value);
+            const hintEl = document.getElementById('starLimitHint');
+            const limit = getCalcStarLimit();
+            const rankOpt = tierSelect.options[tierSelect.selectedIndex];
+            const rankName = rankOpt ? (rankOpt.getAttribute('data-name') || rankOpt.text) : 'rank ini';
 
-            if (isNaN(stars) || stars < 1) stars = 0;
+            // Tampilkan batas rank terpilih
+            if (hintEl) hintEl.textContent = `Min ${CALC_MIN_STARS} \u2022 Maks ${limit.toLocaleString('id-ID')} bintang`;
 
-            const totalCost = pricePerStar * stars;
+            // 1) Hanya angka 0-9 (buang huruf, spasi, titik, minus, "e", dsb.) & buang nol di depan
+            const digits = starInput.value.replace(/\D/g, '').replace(/^0+/, '');
+            let stars = digits === '' ? NaN : parseInt(digits, 10);
+            let msg = '', msgType = 'warn';
+
+            // 2) Tidak boleh melebihi batas rank -> otomatis dipotong ke batas maksimal
+            if (!isNaN(stars) && stars > limit) {
+                stars = limit;
+                msg = `Maksimal ${limit.toLocaleString('id-ID')} bintang untuk rank ${rankName}. Jumlah disesuaikan.`;
+            } else if (isNaN(stars)) {
+                msg = `Isi jumlah bintang ${CALC_MIN_STARS} - ${limit.toLocaleString('id-ID')}.`;
+                msgType = 'error';
+            }
+
+            const cleaned = isNaN(stars) ? '' : String(stars);
+            if (starInput.value !== cleaned) starInput.value = cleaned;
+            showStarMsg(msg, msgType);
+
+            const totalCost = pricePerStar * (isNaN(stars) ? 0 : stars);
             document.getElementById('rankTotalCost').innerText = 'Rp ' + totalCost.toLocaleString('id-ID');
         }
 

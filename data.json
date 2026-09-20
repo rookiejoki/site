@@ -10,7 +10,7 @@
   "header": {
     "title": "Rookie Joki",
     "tagline": "Joki Rank MLBB Termurah Se-Nusantara",
-    "ctaLabel": "Order",
+    "ctaLabel": "Pesan",
     "ctaTarget": "#pricelist"
   },
   "ticker": [
@@ -28,11 +28,6 @@
       "icon": "zap",
       "text": "Proses Cepat & Aman 100%",
       "color": "text-emerald-400"
-    },
-    {
-      "text": "Selamat Bung! Anda layak dapat Bintang",
-      "icon": "star",
-      "color": "text-brand-accent"
     }
   ],
   "slider": [
@@ -109,37 +104,37 @@
         },
         {
           "name": "Epic",
-          "price": "Rp 7.000 / bintang",
+          "price": "Rp 4.000 / bintang",
           "tag": "Most Popular",
           "popular": true
         },
         {
           "name": "Legend",
-          "price": "Rp 8.000 / bintang",
+          "price": "Rp 5.000 / bintang",
           "tag": "Per Bintang",
           "popular": false
         },
         {
           "name": "Mythic",
-          "price": "Rp 12.000 / bintang",
+          "price": "Rp 7.000 / bintang",
           "tag": "1 - 25 Star",
           "popular": false
         },
         {
           "name": "Mythical Honor",
-          "price": "Rp 15.000 / bintang",
+          "price": "Rp 10.000 / bintang",
           "tag": "25 - 50 Star",
           "popular": false
         },
         {
           "name": "Mythical Glory",
-          "price": "Rp 20.000 / bintang",
+          "price": "Rp 13.000 / bintang",
           "tag": "50 - 100 Star",
           "popular": false
         },
         {
           "name": "Mythical Immortal",
-          "price": "Rp 25.000 / bintang",
+          "price": "Rp 18.000 / bintang",
           "tag": "100+ Star",
           "popular": false
         }
@@ -568,7 +563,7 @@
   "blogPosts": [
     {
       "id": 1,
-      "title": "Cara Ampuh Lolos Dari Epic Neraka Season 42",
+      "title": "Cara Ampuh Lolos Dari Epic Neraka Season Ini",
       "category": "Tips Rank",
       "excerpt": "Simak panduan memilih hero core dan manajemen waktu bermain agar cepat tembus Legend tanpa drama tim random.",
       "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
@@ -684,7 +679,7 @@
     },
     {
       "id": 5,
-      "title": "Panduan Rotasi Peta untuk Role Roamer Terbaru",
+      "title": "Panduan Rotasi Peta untuk Role Roamer",
       "category": "Tutorial",
       "excerpt": "Roamer yang baik bukan yang paling banyak damage, tapi paling sering berada di tempat yang tepat.",
       "image": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=800&auto=format&fit=crop",
@@ -6196,7 +6191,7 @@
       "badge": "Otomatis",
       "description": "Scan menggunakan Bank (BCA, Mandiri, BRI, BNI) atau E-Wallet (GoPay, OVO, DANA, ShopeePay).",
       "qrImageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ROOKIEJOKI-QRIS-DEMO",
-      "merchantName": "NMK: ROOKIE JOKI"
+      "merchantName": "NMK: ROOKIE JOKI OFFICIAL"
     },
     "accounts": [
       {
@@ -6282,21 +6277,6 @@
   ],
   "faqs": [
     {
-      "id": 1,
-      "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
-      "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
-    },
-    {
-      "id": 2,
-      "question": "Informasi Penting Sebelum Order",
-      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
-    },
-    {
-      "id": 3,
-      "question": "Format Order Joki",
-      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Lengkapi Data Login akun Mobile Legends Anda dengan teliti.</li>\n<li>Pilih kategori joki, Rank Eceran, Paketan, Joki Gendong atau MRO.</li>\n<li>Masukkan jumlah Per (Star/Point) yang dituju.</li>\n<li>Masukan No. WhatsApp Anda dengan benar.</li>\n<li>Tunggu Admin menghubungi Anda.</li>\n<li>Admin akan menghubungi untuk Info & Konfirmasi Pembayaran.</li>\n<li>Setelah pembayaran berhasil, akun Anda akan segera di proses.</li>\n<li>Estimasi proses Jasa Joki mulai dari minimal 6 Jam – 2 x 24 Jam (Tergantung Banyaknya Antrian).</li>\n<li>Jika pesanan Anda belum di proses dalam waktu 30 menit, silahkan chat Admin.</li>\n</ul>"
-    },
-    {
       "id": 6,
       "question": "Apakah aman menggunakan jasa joki di Rookie Joki?",
       "answer": "Sangat aman! Kami telah beroperasi sejak 2021 dan dikelola oleh pro player berpengalaman yang mengutamakan kerahasiaan akun serta privasi pelanggan tanpa menggunakan program ilegal atau cheat."
@@ -6307,19 +6287,9 @@
       "answer": "Durasi pengerjaan bervariasi tergantung jumlah bintang atau paket yang dipesan. Rata-rata per 5 bintang hanya membutuhkan waktu beberapa jam hingga 1 hari saja tanpa ada penundaan."
     },
     {
-      "id": 9,
-      "question": "Metode pembayaran apa saja yang didukung?",
-      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
-    },
-    {
       "id": 4,
       "question": "Bisakah saya request hero tertentu saat proses joki?",
       "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
-    },
-    {
-      "id": 5,
-      "question": "Maksimal berapa hero yang bisa di joki?",
-      "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
     },
     {
       "id": 8,
@@ -6327,19 +6297,44 @@
       "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
+      "id": 9,
+      "question": "Metode pembayaran apa saja yang didukung?",
+      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
+    },
+    {
       "id": 10,
       "question": "Apa bedanya Joki Login dan Joki Gendong (Mabar)?",
       "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
     },
     {
-      "id": 12,
-      "question": "Jaringan Internet terputus saat Joki Gendong/Mabar VIP",
-      "answer": "Jika saat sedang Joki Gendong/Mabar VIP Jaringan Internet terputus, hal tersebut tidak masalah, karena worker kami anti kalah-kalah klub."
-    },
-    {
       "id": 11,
       "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
       "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
+    },
+    {
+      "id": 2,
+      "question": "Informasi Penting Sebelum Order",
+      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
+    },
+    {
+      "id": 1,
+      "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
+      "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 3,
+      "question": "Format Order Joki",
+      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Lengkapi Data Login akun Mobile Legends Anda dengan teliti.</li>\n<li>Pilih kategori joki, Rank Eceran, Paketan, Joki Gendong atau MRO.</li>\n<li>Masukkan jumlah Per (Star/Point) yang dituju.</li>\n<li>Masukan No. WhatsApp Anda dengan benar.</li>\n<li>Tunggu Admin menghubungi Anda.</li>\n<li>Admin akan menghubungi untuk Info & Konfirmasi Pembayaran.</li>\n<li>Setelah pembayaran berhasil, akun Anda akan segera di proses.</li>\n<li>Estimasi proses Jasa Joki mulai dari minimal 6 Jam – 2 x 24 Jam (Tergantung Banyaknya Antrian).</li>\n<li>Jika pesanan Anda belum di proses dalam waktu 30 menit, silahkan chat Admin.</li>\n</ul>"
+    },
+    {
+      "id": 5,
+      "question": "Maksimal berapa hero yang bisa di joki?",
+      "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
+    },
+    {
+      "id": 12,
+      "question": "Jaringan Internet terputus saat Joki Gendong/Mabar VIP",
+      "answer": "Jika saat sedang Joki Gendong/Mabar VIP Jaringan Internet terputus, hal tersebut tidak masalah, karena worker kami anti kalah-kalah klub."
     },
     {
       "id": 13,
@@ -6352,52 +6347,62 @@
       {
         "name": "Warrior",
         "price": 1000,
-        "label": "Rp 1.000 / bintang"
+        "label": "Rp 1.000 / bintang",
+        "maxStars": 9
       },
       {
         "name": "Elite",
         "price": 1500,
-        "label": "Rp 1.500 / bintang"
+        "label": "Rp 1.500 / bintang",
+        "maxStars": 12
       },
       {
         "name": "Master",
         "price": 2000,
-        "label": "Rp 2.000 / bintang"
+        "label": "Rp 2.000 / bintang",
+        "maxStars": 16
       },
       {
         "name": "Grandmaster",
         "price": 3000,
-        "label": "Rp 3.000 / bintang"
+        "label": "Rp 3.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Epic",
         "price": 4000,
-        "label": "Rp 4.000 / bintang"
+        "label": "Rp 4.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Legend",
         "price": 5000,
-        "label": "Rp 5.000 / bintang"
+        "label": "Rp 5.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythic",
         "price": 7000,
-        "label": "Rp 7.000 / bintang"
+        "label": "Rp 7.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Honor",
         "price": 10000,
-        "label": "Rp 10.000 / bintang"
+        "label": "Rp 10.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Glory",
         "price": 13000,
-        "label": "Rp 13.000 / bintang"
+        "label": "Rp 13.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Immortal",
         "price": 18000,
-        "label": "Rp 18.000 / bintang"
+        "label": "Rp 18.000 / bintang",
+        "maxStars": 100000
       }
     ],
     "defaultStars": 5,
