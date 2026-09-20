@@ -6292,14 +6292,14 @@
       "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
     },
     {
-      "id": 8,
-      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
-      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
-    },
-    {
       "id": 2,
       "question": "Informasi Penting Sebelum Order",
       "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
+    },
+    {
+      "id": 8,
+      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
+      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
       "id": 3,
