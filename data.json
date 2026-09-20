@@ -178,9 +178,9 @@
         },
         {
           "name": "Legend (Full Tier)",
-          "price": "Rp 125.000",
+          "price": "Rp 220.000",
           "tag": "Paket Hemat",
-          "popular": false
+          "popular": true
         },
         {
           "name": "Full Grading Placement",
