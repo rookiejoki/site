@@ -237,7 +237,24 @@ function cmsToast(message, isError) {
         el.style.opacity = '0';
         el.style.transform = 'translateY(6px)';
         setTimeout(() => el.remove(), 250);
-    }, 2800);
+    }, isError ? 8000 : 2800);   // pesan error tampil lebih lama supaya sempat dibaca
+}
+
+/** Kotak error permanen di dalam form (tidak hilang seperti toast). message kosong = hapus kotak. */
+function cmsShowFormError(form, message) {
+    form = form || document.querySelector('#adminPanelContent form');
+    if (!form) return;
+    let box = form.querySelector('.cms-form-error');
+    if (!message) { if (box) box.remove(); return; }
+    if (!box) {
+        box = document.createElement('div');
+        box.className = 'cms-form-error rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-[10px] leading-relaxed p-2.5 font-semibold break-words';
+        box.setAttribute('role', 'alert');
+        const submit = form.querySelector('button[type="submit"]');
+        if (submit) submit.parentNode.insertBefore(box, submit); else form.appendChild(box);
+    }
+    box.textContent = 'Gagal menyimpan — ' + message;
+    if (box.scrollIntoView) box.scrollIntoView({ block: 'nearest' });
 }
 
 // ----------------------------------------------------------
@@ -474,8 +491,9 @@ async function saveObjectForm(e, schemaKey) {
     if (!schema) return;
     const form = e.target;
     await cmsRunSave(form, async (setStatus) => {
+        cmsShowFormError(form, '');
         try { await cmsFlushUploads(form, setStatus); }
-        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); return; }
+        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); cmsShowFormError(form, 'upload file: ' + err.message); return; }
         setStatus('Menyimpan…');
         const targetObj = cmsGetValueByPath(SITE_DATA, schema.path) || {};
         const backup = JSON.parse(JSON.stringify(targetObj));
@@ -529,8 +547,9 @@ async function saveListItemForm(e, schemaKey, index) {
     if (!schema) return;
     const form = e.target;
     await cmsRunSave(form, async (setStatus) => {
+        cmsShowFormError(form, '');
         try { await cmsFlushUploads(form, setStatus); }
-        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); return; }
+        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); cmsShowFormError(form, 'upload file: ' + err.message); return; }
         setStatus('Menyimpan…');
         let list = cmsGetValueByPath(SITE_DATA, schema.path);
         if (!Array.isArray(list)) { list = []; cmsSetValueByPath(SITE_DATA, schema.path, list); }
@@ -587,6 +606,7 @@ async function cmsSaveAndSync(schemaKey) {
         return true;
     } catch (err) {
         cmsToast('Gagal menyimpan: ' + err.message, true);
+        cmsShowFormError(null, err.message);
         return false;
     }
 }
@@ -685,8 +705,9 @@ async function cmsSaveBlogForm(e, id) {
     e.preventDefault();
     const form = e.target;
     await cmsRunSave(form, async (setStatus) => {
+        cmsShowFormError(form, '');
         try { await cmsFlushUploads(form, setStatus); }
-        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); return; }
+        catch (err) { cmsToast('Gagal mengunggah file: ' + err.message, true); cmsShowFormError(form, 'upload file: ' + err.message); return; }
         setStatus('Menyimpan…');
         const ctx = window.cmsEditCtx || {};
         const list = SITE_DATA.blogPosts || (SITE_DATA.blogPosts = []);
@@ -712,6 +733,7 @@ async function cmsSaveBlogForm(e, id) {
             if (ctx.fromPanel) renderAdminPanelContent('blogPosts'); else closeAdminPanel();
         } catch (err) {
             cmsToast('Gagal menyimpan artikel: ' + err.message, true);
+            cmsShowFormError(form, err.message);
             if (isNew) { list.pop(); SITE_DATA.blogNextId = prevNextId; } else list[index] = backup;
         }
     });
@@ -869,8 +891,8 @@ Object.assign(CMS_SCHEMA,{
         emptyItem:()=>({label:'Menu Baru',icon:'circle',actionType:'scroll',target:'#beranda',active:false}),onSave:renderBottomNav},
     pricelist:{label:'Pricelist / Harga',icon:'badge-dollar-sign',type:'custom',path:['pricelist'],render:cmsRenderPricelistAdmin},
     calculatorOptions:{label:'Kalkulator Joki',icon:'calculator',type:'list',path:['calculator','rankOptions'],itemLabel:i=>`${i.name||'(kosong)'} - Rp ${Number(i.price||0).toLocaleString('id-ID')}`,fields:[
-        {key:'name',label:'Nama Rank',type:'text'},{key:'price',label:'Harga per Bintang (angka)',type:'number'},{key:'label',label:'Label Harga',type:'text'}],
-        emptyItem:()=>({name:'Rank Baru',price:0,label:'Rp 0 / bintang'}),onSave:()=>{if(typeof renderCalculatorOptions==='function')renderCalculatorOptions();}},
+        {key:'name',label:'Nama Rank',type:'text'},{key:'price',label:'Harga per Bintang (angka)',type:'number'},{key:'label',label:'Label Harga',type:'text'},{key:'maxStars',label:'Maksimal Bintang yang boleh diinput (angka, min 1)',type:'number'}],
+        emptyItem:()=>({name:'Rank Baru',price:0,label:'Rp 0 / bintang',maxStars:25}),onSave:()=>{if(typeof renderCalculatorOptions==='function')renderCalculatorOptions();}},
     blogPosts:{label:'Blog Posts & Detail',icon:'newspaper',type:'custom',path:['blogPosts'],render:c=>cmsRenderBlogAdmin(c)},
     admins:{label:'Manajemen Admin',icon:'users',type:'custom',path:['admins'],render:cmsRenderAdmins}
 });
@@ -881,4 +903,83 @@ function cmsRenderBlogAdmin(container){
  <p class="text-[9px] text-slate-400">Form artikel mendukung konten detail, gambar, video, daftar poin dan tags.</p>
  <div class="space-y-1.5 max-h-[60vh] overflow-y-auto">${posts.map((p,i)=>`<div class="p-2.5 bg-slate-50 border rounded-xl flex gap-2 items-center"><div class="flex-1 min-w-0"><b class="text-[10px] line-clamp-2">${cmsEsc(p.title)}</b><div class="text-[9px] text-slate-400">${cmsEsc(p.category)} • ${cmsEsc(p.date)}</div></div><button onclick="cmsOpenBlogForm(${p.id})" class="px-2 py-1 bg-amber-500 text-white rounded-lg text-[9px]">Edit</button><button onclick="cmsDeleteBlogPost(${p.id})" class="px-2 py-1 bg-rose-600 text-white rounded-lg text-[9px]">Hapus</button><button onclick="cmsMoveListItem('blogPosts',${i},-1)" class="px-1.5 py-1 bg-slate-200 rounded-lg text-[9px]">↑</button><button onclick="cmsMoveListItem('blogPosts',${i},1)" class="px-1.5 py-1 bg-slate-200 rounded-lg text-[9px]">↓</button></div>`).join('')}</div></div>`;
  if(window.lucide)lucide.createIcons();
+}
+
+
+// ----------------------------------------------------------
+// DIAGNOSTIK KONEKSI GITHUB (tombol "Tes Koneksi" di header Panel Admin)
+// Memeriksa: token, repo, branch, izin tulis, file data.json, kuota API.
+// ----------------------------------------------------------
+async function cmsRunDiagnostics() {
+    let m = document.getElementById('cmsDiagModal');
+    if (!m) {
+        m = document.createElement('div');
+        m.id = 'cmsDiagModal';
+        m.className = 'fixed inset-0 z-[75] flex items-center justify-center p-3 bg-slate-950/70 backdrop-blur-sm';
+        m.addEventListener('click', (e) => { if (e.target === m) m.remove(); });
+        document.body.appendChild(m);
+    }
+    const render = (rows, done) => {
+        m.innerHTML = `
+            <div class="bg-white rounded-2xl w-full max-w-[520px] max-h-[88vh] overflow-y-auto shadow-2xl border border-slate-100 p-4 space-y-2.5">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-bold text-sm text-slate-900">Tes Koneksi GitHub</h3>
+                    <button type="button" onclick="document.getElementById('cmsDiagModal').remove()" class="w-7 h-7 rounded-full hover:bg-slate-100 text-slate-400">✕</button>
+                </div>
+                <div class="space-y-1.5">
+                    ${rows.map(r => `
+                        <div class="flex gap-2 p-2 rounded-lg border ${r.ok ? 'border-emerald-100 bg-emerald-50/60' : 'border-rose-200 bg-rose-50'}">
+                            <span class="font-extrabold ${r.ok ? 'text-emerald-600' : 'text-rose-600'}">${r.ok ? '✓' : '✗'}</span>
+                            <div class="min-w-0"><p class="text-[11px] font-bold text-slate-800">${cmsEsc(r.title)}</p><p class="text-[10px] text-slate-600 break-words">${cmsEsc(r.detail)}</p></div>
+                        </div>`).join('')}
+                    ${done ? '' : '<p class="text-[10px] text-slate-400">Memeriksa…</p>'}
+                </div>
+                ${done ? '<p class="text-[10px] text-slate-500 leading-relaxed">Jika semua ✓ tetapi penyimpanan tetap gagal, salin pesan merah yang muncul di atas tombol Simpan (di dalam form) — pesan itu memuat kode HTTP dan jawaban asli GitHub.</p>' : ''}
+            </div>`;
+    };
+    const rows = [];
+    const add = (ok, title, detail) => { rows.push({ ok, title, detail }); render(rows, false); };
+    render(rows, false);
+
+    const repo = cmsResolvedRepo(), branch = CMS_CONFIG.branch || 'main', path = CMS_CONFIG.dataPath || 'data.json';
+    add(!!CMS_GITHUB_TOKEN, 'Token GitHub', CMS_GITHUB_TOKEN ? 'Terisi (hanya di memori selama halaman terbuka).' : 'Kosong. Login ulang dan isi Fine-grained PAT.');
+    add(!!repo && repo.includes('/'), 'Repository yang dipakai', (repo || '(belum diisi)') + ' · branch ' + branch + ' · file ' + path + ' — jika ini bukan repo Anda, ubah assets/cms-config.js');
+    if (!CMS_GITHUB_TOKEN || !repo) { render(rows, true); return; }
+
+    const call = async (label, url) => {
+        try { return await cmsGhFetch(url, { headers: cmsGitHubHeaders(), cache: 'no-store' }); }
+        catch (e) { add(false, label, e.message); return null; }
+    };
+    const base = 'https://api.github.com/repos/' + repo;
+    const r1 = await call('Akses repository', base);
+    if (r1) {
+        if (r1.ok) {
+            const j = await r1.json();
+            add(true, 'Akses repository', j.full_name + (j.private ? ' (private)' : ' (publik)'));
+            if (j.permissions && typeof j.permissions.push === 'boolean') {
+                add(j.permissions.push, 'Izin menulis (push)', j.permissions.push ? 'Ya, token boleh menulis.' : 'TIDAK. Buat ulang token dengan Repository permissions → Contents: Read and write.');
+            } else add(true, 'Izin menulis (push)', 'Tidak dilaporkan GitHub untuk jenis token ini; akan diuji saat menyimpan.');
+        } else {
+            const info = await r1.json().catch(() => null);
+            add(false, 'Akses repository', cmsGitHubErrorMessage(r1.status) + (info && info.message ? ' [GitHub: ' + info.message + ']' : '') + ' — HTTP ' + r1.status);
+        }
+    }
+    const r2 = await call('Branch', base + '/branches/' + encodeURIComponent(branch));
+    if (r2) {
+        if (r2.ok) {
+            const j = await r2.json();
+            add(!j.protected, 'Branch "' + branch + '"', j.protected ? 'Branch DILINDUNGI (branch protection) — commit langsung dari CMS bisa ditolak. Nonaktifkan proteksi atau beri pengecualian.' : 'Ada dan bisa di-commit langsung.');
+        } else add(false, 'Branch "' + branch + '"', 'Tidak ditemukan (HTTP ' + r2.status + '). Periksa "branch" di assets/cms-config.js.');
+    }
+    const r3 = await call('File data', base + '/contents/' + path + '?ref=' + encodeURIComponent(branch));
+    if (r3) {
+        if (r3.ok) { const j = await r3.json(); add(true, 'File ' + path, 'Terbaca (' + Math.round((j.size || 0) / 1024) + ' KB).'); }
+        else add(false, 'File ' + path, 'Tidak terbaca (HTTP ' + r3.status + '). Pastikan file ada di branch tersebut.');
+    }
+    const r4 = await call('Kuota API', 'https://api.github.com/rate_limit');
+    if (r4 && r4.ok) {
+        const j = await r4.json(); const c = j.resources && j.resources.core;
+        if (c) add(c.remaining > 20, 'Kuota API GitHub', c.remaining + ' dari ' + c.limit + ' permintaan tersisa.');
+    }
+    render(rows, true);
 }

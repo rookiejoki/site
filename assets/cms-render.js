@@ -1185,9 +1185,12 @@ function renderFaqs() {
 function renderCalculatorOptions(){
  const sel=document.getElementById('tierSelect'); if(!sel) return;
  const opts=SITE_DATA.calculator?.rankOptions || [];
- const current=sel.value;
- sel.innerHTML=opts.map(o=>`<option value="${Number(o.price)||0}" data-name="${cmsEsc(o.name)}">${cmsEsc(o.name)} (${cmsEsc(o.label||('Rp '+Number(o.price||0).toLocaleString('id-ID')+' / Bintang'))})</option>`).join('');
- if(current && Array.from(sel.options).some(o=>o.value===current)) sel.value=current;
- if(!sel.value && opts.length) sel.value=String(opts[Math.min(1,opts.length-1)].price||0);
+ // Ingat pilihan sebelumnya lewat NAMA rank (bukan harga, karena harga bisa kembar antar rank)
+ const currentName=sel.options[sel.selectedIndex]?.getAttribute('data-name') || '';
+ // data-max-stars = batas bintang dari CMS (kosong bila belum diisi -> memakai aturan default per rank di index.html)
+ sel.innerHTML=opts.map(o=>`<option value="${Number(o.price)||0}" data-name="${cmsEsc(o.name)}" data-max-stars="${Math.floor(Number(o.maxStars))>=1?Math.floor(Number(o.maxStars)):''}">${cmsEsc(o.name)} (${cmsEsc(o.label||('Rp '+Number(o.price||0).toLocaleString('id-ID')+' / Bintang'))})</option>`).join('');
+ const keep=Array.from(sel.options).findIndex(o=>o.getAttribute('data-name')===currentName);
+ if(currentName && keep>=0) sel.selectedIndex=keep;
+ else if(opts.length) sel.selectedIndex=Math.min(1,opts.length-1);
  if(typeof calculateRankCost==='function') calculateRankCost();
 }

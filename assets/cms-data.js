@@ -6350,52 +6350,62 @@ const DEFAULT_SITE_DATA = {
       {
         "name": "Warrior",
         "price": 1000,
-        "label": "Rp 1.000 / bintang"
+        "label": "Rp 1.000 / bintang",
+        "maxStars": 9
       },
       {
         "name": "Elite",
         "price": 1500,
-        "label": "Rp 1.500 / bintang"
+        "label": "Rp 1.500 / bintang",
+        "maxStars": 12
       },
       {
         "name": "Master",
         "price": 2000,
-        "label": "Rp 2.000 / bintang"
+        "label": "Rp 2.000 / bintang",
+        "maxStars": 16
       },
       {
         "name": "Grandmaster",
         "price": 3000,
-        "label": "Rp 3.000 / bintang"
+        "label": "Rp 3.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Epic",
         "price": 4000,
-        "label": "Rp 4.000 / bintang"
+        "label": "Rp 4.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Legend",
         "price": 5000,
-        "label": "Rp 5.000 / bintang"
+        "label": "Rp 5.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythic",
         "price": 7000,
-        "label": "Rp 7.000 / bintang"
+        "label": "Rp 7.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Honor",
         "price": 10000,
-        "label": "Rp 10.000 / bintang"
+        "label": "Rp 10.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Glory",
         "price": 13000,
-        "label": "Rp 13.000 / bintang"
+        "label": "Rp 13.000 / bintang",
+        "maxStars": 25
       },
       {
         "name": "Mythical Immortal",
         "price": 18000,
-        "label": "Rp 18.000 / bintang"
+        "label": "Rp 18.000 / bintang",
+        "maxStars": 100000
       }
     ],
     "defaultStars": 5,
