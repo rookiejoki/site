@@ -6322,14 +6322,14 @@
       "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
     },
     {
-      "id": 1,
-      "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
-      "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
-    },
-    {
       "id": 5,
       "question": "Maksimal berapa hero yang bisa di joki?",
       "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
+    },
+    {
+      "id": 1,
+      "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
+      "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
     },
     {
       "id": 12,
