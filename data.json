@@ -6322,14 +6322,14 @@
       "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
     },
     {
-      "id": 11,
-      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
-      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
-    },
-    {
       "id": 1,
       "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
       "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 11,
+      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
+      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
     },
     {
       "id": 12,
