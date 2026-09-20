@@ -6312,14 +6312,14 @@
       "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
     },
     {
-      "id": 10,
-      "question": "Apa bedanya Joki Login dan Joki Gendong (Mabar)?",
-      "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
-    },
-    {
       "id": 5,
       "question": "Maksimal berapa hero yang bisa di joki?",
       "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
+    },
+    {
+      "id": 10,
+      "question": "Apa bedanya Joki Login dan Joki Gendong (Mabar)?",
+      "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
     },
     {
       "id": 11,
