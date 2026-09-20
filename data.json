@@ -6312,14 +6312,14 @@
       "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
     },
     {
-      "id": 8,
-      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
-      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
-    },
-    {
       "id": 9,
       "question": "Metode pembayaran apa saja yang didukung?",
       "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
+    },
+    {
+      "id": 8,
+      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
+      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
       "id": 10,
