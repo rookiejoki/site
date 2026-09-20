@@ -28,6 +28,11 @@
       "icon": "zap",
       "text": "Proses Cepat & Aman 100%",
       "color": "text-emerald-400"
+    },
+    {
+      "text": "Selamat Bung! Anda layak dapat Bintang",
+      "icon": "star",
+      "color": "text-white"
     }
   ],
   "slider": [
