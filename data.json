@@ -6312,14 +6312,14 @@
       "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
     },
     {
-      "id": 2,
-      "question": "Informasi Penting Sebelum Order",
-      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
-    },
-    {
       "id": 3,
       "question": "Format Order Joki",
       "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Lengkapi Data Login akun Mobile Legends Anda dengan teliti.</li>\n<li>Pilih kategori joki, Rank Eceran, Paketan, Joki Gendong atau MRO.</li>\n<li>Masukkan jumlah Per (Star/Point) yang dituju.</li>\n<li>Masukan No. WhatsApp Anda dengan benar.</li>\n<li>Tunggu Admin menghubungi Anda.</li>\n<li>Admin akan menghubungi untuk Info & Konfirmasi Pembayaran.</li>\n<li>Setelah pembayaran berhasil, akun Anda akan segera di proses.</li>\n<li>Estimasi proses Jasa Joki mulai dari minimal 6 Jam – 2 x 24 Jam (Tergantung Banyaknya Antrian).</li>\n<li>Jika pesanan Anda belum di proses dalam waktu 30 menit, silahkan chat Admin.</li>\n</ul>"
+    },
+    {
+      "id": 2,
+      "question": "Informasi Penting Sebelum Order",
+      "answer": "<ul class=\"list-disc pl-4 space-y-1\">\n<li>Matikan Verifikasi Akun untuk Mempermudah worker Login.</li>\n<li>Jika Akun di Login tanpa izin, maka proses Joki akan dibatalkan dan uang pembayaran Anda akan hangus.</li>\n<li>Dimohon menunggu sesuai estimasi proses dan dilarang chat-spam Admin.</li>\n<li>Jika ada problem saat Login ke akun, maka akan segera di hubungi oleh Admin.</li>\n<li>Jika akun belum di proses selama kurang lebih dari 6 jam, harap hubungi Admin.</li>\n<li>Bukti TF akan selalu di verifikasi sebelum Akun diproses.</li>\n<li>Jika proses Joki sudah selesai maka akan segera diinfokan oleh Admin.</li>\n</ul>"
     },
     {
       "id": 1,
