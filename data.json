@@ -6253,7 +6253,7 @@
       "active": true
     },
     {
-      "label": "About Us",
+      "label": "Rookie",
       "icon": "gamepad",
       "actionType": "modal",
       "target": "openAboutUsModal",
