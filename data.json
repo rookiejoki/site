@@ -6358,8 +6358,8 @@
       },
       {
         "name": "Master",
-        "price": 5000,
-        "label": "Rp 5.000 / bintang",
+        "price": 3000,
+        "label": "Rp 3.000 / bintang",
         "maxStars": 16
       },
       {
