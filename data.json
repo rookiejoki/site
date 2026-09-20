@@ -6317,14 +6317,14 @@
       "answer": "Joki Login berarti akun Anda dimainkan langsung oleh worker kami. Sedangkan Joki Gendong (Mabar) berarti Anda bermain menggunakan akun sendiri dan didampingi/digendong oleh squad pro player kami."
     },
     {
-      "id": 11,
-      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
-      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
-    },
-    {
       "id": 5,
       "question": "Maksimal berapa hero yang bisa di joki?",
       "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
+    },
+    {
+      "id": 11,
+      "question": "Apakah ada jaminan garansi jika mengalami kekalahan (lose)?",
+      "answer": "Ya, setiap bintang yang berkurang akibat kekalahan saat dikerjakan worker akan digantikan (kompensasi bintang) hingga target pesanan Anda tercapai sepenuhnya tanpa biaya tambahan."
     },
     {
       "id": 1,
