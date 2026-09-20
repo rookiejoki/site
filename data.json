@@ -4,6 +4,7 @@
     "adminPhone": "6285266558018"
   },
   "admin": {
+    "id": 1,
     "username": "admin",
     "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d"
   },
@@ -6413,6 +6414,11 @@
       "id": 1,
       "username": "admin",
       "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d"
+    },
+    {
+      "id": 1789890722443,
+      "username": "ma.dara",
+      "passwordHash": "9280b42395417516f8d182961d38ff9e3ce7b2cc13ce3ed4f01ba7aead2b85e6"
     }
   ],
   "search": {
