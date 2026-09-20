@@ -6394,9 +6394,9 @@
       },
       {
         "name": "Mythical Glory",
-        "price": 13000,
-        "label": "Rp 13.000 / bintang",
-        "maxStars": 25
+        "price": 30000,
+        "label": "Rp 30.000 / bintang",
+        "maxStars": 50
       },
       {
         "name": "Mythical Immortal",
