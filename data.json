@@ -6254,7 +6254,7 @@
     },
     {
       "label": "Rookie",
-      "icon": "gamepad",
+      "icon": "gamepad-2",
       "actionType": "modal",
       "target": "openAboutUsModal",
       "active": false
