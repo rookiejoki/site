@@ -4,9 +4,9 @@
     "adminPhone": "6285266558018"
   },
   "admin": {
-    "id": 1,
     "username": "admin",
-    "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d"
+    "passwordHash": "4671037693915bc095fb26f7f6a01ea665b38c76c429bfeaf1a3db5f700e712d",
+    "id": 1
   },
   "header": {
     "title": "Rookie Joki",
@@ -6437,9 +6437,9 @@
   "invoice": {
     "businessName": "Rookie Joki",
     "businessTagline": "Jasa Joki Rank Mobile Legends Terpercaya Se-Nusantara",
-    "signerName": "Admin Rookie Joki",
+    "signerName": "Admin Rookie",
     "signerTitle": "Administrator",
-    "signatureImage": "",
+    "signatureImage": "uploads/signature/signature-mu9kzq2x.png",
     "terms": "Simpan bukti ini sebagai referensi. Cek status pesanan kapan saja di website menggunakan ID Transaksi.",
     "footerNote": "Terima kasih telah mempercayai Rookie Joki"
   }
