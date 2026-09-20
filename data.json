@@ -6302,14 +6302,14 @@
       "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
     },
     {
-      "id": 5,
-      "question": "Maksimal berapa hero yang bisa di joki?",
-      "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
-    },
-    {
       "id": 1,
       "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
       "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 5,
+      "question": "Maksimal berapa hero yang bisa di joki?",
+      "answer": "Request maksimal hero yang boleh di joki sebanyak 3 Hero, lebih dari itu kami tidak melayani."
     },
     {
       "id": 8,
