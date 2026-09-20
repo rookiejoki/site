@@ -5697,9 +5697,12 @@
       "phone": "085126018159",
       "service": "Joki Rank Epic to Legend",
       "worker": "Rookie_Alpha",
-      "status": "On Process",
+      "status": "Done",
       "progress": "2/6 Jam",
-      "date": "3 Sep 2026"
+      "date": "3 Sep 2026",
+      "amount": "125000",
+      "paymentMethod": "DANA",
+      "note": "Pembayaran sempat tertunda 2 hari karena sistem... "
     },
     {
       "id": "RK-1002",
