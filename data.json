@@ -183,7 +183,7 @@
         },
         {
           "name": "Full Grading Placement",
-          "price": "Rp 150.000",
+          "price": "Rp 100.000",
           "tag": "15 Bintang Full Hijau",
           "popular": true
         },
@@ -684,7 +684,7 @@
     },
     {
       "id": 5,
-      "title": "Panduan Rotasi Peta untuk Role Roamer",
+      "title": "Panduan Rotasi Peta untuk Role Roamer Terbaru",
       "category": "Tutorial",
       "excerpt": "Roamer yang baik bukan yang paling banyak damage, tapi paling sering berada di tempat yang tepat.",
       "image": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=800&auto=format&fit=crop",
