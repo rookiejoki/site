@@ -29,6 +29,11 @@
       "icon": "zap",
       "text": "Proses Cepat & Aman 100%",
       "color": "text-emerald-400"
+    },
+    {
+      "text": "Selamat Datang di Season #42",
+      "icon": "megaphone",
+      "color": "mint-500"
     }
   ],
   "slider": [
