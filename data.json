@@ -6364,8 +6364,8 @@
       },
       {
         "name": "Grandmaster",
-        "price": 7000,
-        "label": "Rp 7.000 / bintang",
+        "price": 5000,
+        "label": "Rp 5.000 / bintang",
         "maxStars": 25
       },
       {
