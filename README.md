@@ -73,9 +73,8 @@ Catatan: setelah upload, GitHub Pages butuh sekitar 1-2 menit untuk rebuild. Sel
 5. Jika memakai custom domain, isi `repo` dan `dataUrl` di `assets/cms-config.js`.
 
 ## Login & GitHub Token
-Login awal:
-- Username: `admin`
-- Password: `rookiejoki2026`
+Login memakai akun admin di menu **Manajemen Admin** (password disimpan sebagai hash di `data.json`).
+Ganti password bawaan segera setelah deploy. Jangan menulis username/password di README atau file lain di repository publik.
 
 Buat **Fine-grained Personal Access Token** GitHub dengan (izin yang sama juga dipakai untuk upload gambar/video):
 - Repository access: hanya repository website ini.
@@ -125,3 +124,24 @@ Setelah admin menyimpan, browser admin langsung merender data baru. Pengunjung l
 ## Peringatan Privasi
 Repository GitHub Pages bersifat publik: `data.json` (termasuk nama & nomor HP pada daftar pesanan) dan seluruh file di
 `uploads/` (termasuk gambar tanda tangan) dapat diakses siapa pun yang tahu URL-nya. Gunakan data pelanggan seperlunya.
+
+
+## Jika Data Tidak Bisa Disimpan
+1. Klik ikon **Tes Koneksi GitHub** (ikon grafik denyut) di header Panel Admin. Tes ini memeriksa token, repo, branch,
+   izin tulis, file `data.json`, dan sisa kuota API, lalu menandai bagian yang bermasalah dengan tanda merah.
+2. Saat simpan gagal, kotak merah "Gagal menyimpan - ..." muncul tepat di atas tombol Simpan dan tidak hilang sendiri.
+   Isinya kode HTTP dan jawaban asli GitHub.
+3. Penyebab yang paling sering:
+   - Token tanpa izin **Contents: Read and write**, atau token sudah kedaluwarsa (buat ulang, login ulang).
+   - `repo` / `branch` di `assets/cms-config.js` bukan repository Anda yang sebenarnya.
+   - Branch dilindungi (branch protection) sehingga commit langsung ditolak.
+   - Browser masih memakai file lama dari cache: tekan Ctrl+F5 (atau hapus cache). Saat memperbarui file, naikkan angka
+     `?v=...` pada tag `<script>` di `index.html` dan `post.html`.
+4. Semua penulisan ke GitHub kini diantrekan satu per satu dengan jeda dan percobaan ulang otomatis, karena GitHub bisa
+   menolak commit yang datang beruntun terlalu rapat (mis. unggah gambar lalu langsung simpan `data.json`).
+
+
+## Catatan Upload Manual lewat Web GitHub
+Uploader web GitHub melewati file berawalan titik dan folder kosong. Karena itu:
+- Buat `.nojekyll` secara manual: **Add file → Create new file**, beri nama `.nojekyll`, lalu commit (isi boleh kosong).
+- Folder `uploads/` akan dibuat otomatis oleh Panel Admin saat upload pertama; berkas `README.txt` di dalamnya hanya penanda.
