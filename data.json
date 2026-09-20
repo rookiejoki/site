@@ -6297,14 +6297,14 @@
       "answer": "Durasi pengerjaan bervariasi tergantung jumlah bintang atau paket yang dipesan. Rata-rata per 5 bintang hanya membutuhkan waktu beberapa jam hingga 1 hari saja tanpa ada penundaan."
     },
     {
-      "id": 4,
-      "question": "Bisakah saya request hero tertentu saat proses joki?",
-      "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
-    },
-    {
       "id": 1,
       "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
       "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 4,
+      "question": "Bisakah saya request hero tertentu saat proses joki?",
+      "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
     },
     {
       "id": 5,
