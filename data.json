@@ -6343,14 +6343,14 @@
       "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
-      "id": 9,
-      "question": "Metode pembayaran apa saja yang didukung?",
-      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
-    },
-    {
       "id": 1,
       "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
       "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 9,
+      "question": "Metode pembayaran apa saja yang didukung?",
+      "answer": "Kami mendukung pembayaran praktis via QRIS (semua e-wallet dan bank), transfer bank langsung (BCA & Mandiri), e-wallet manual (GoPay, OVO, DANA), hingga ShopeePay/SPayLater."
     },
     {
       "id": 10,
