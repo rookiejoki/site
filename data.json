@@ -6338,14 +6338,14 @@
       "answer": "Tentu bisa! Anda bebas merequest hero andalan (role Jungler, Gold Laner, Exp Laner, Mage, atau Roamer) selama hero tersebut terbuka dan dapat digunakan dalam mode rank."
     },
     {
-      "id": 8,
-      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
-      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
-    },
-    {
       "id": 1,
       "question": "Bagaimana cara mulai memesan layanan di Rookie Joki?",
       "answer": "Anda cukup memilih paket layanan pada daftar pricelist di atas, klik tombol <strong>Pesan</strong>, atau gunakan Kalkulator Target untuk menghitung biaya, lalu Anda akan diarahkan langsung ke WhatsApp admin kami."
+    },
+    {
+      "id": 8,
+      "question": "Bagaimana cara melacak status pengerjaan akun saya?",
+      "answer": "Anda dapat menggunakan fitur <strong>Cek Status Pesanan</strong> di bagian atas halaman ini dengan memasukkan ID Transaksi atau nomor WhatsApp Anda, atau langsung menghubungi admin via WhatsApp."
     },
     {
       "id": 9,
