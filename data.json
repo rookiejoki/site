@@ -6262,15 +6262,15 @@
         "note": "-"
       },
       {
-        "category": "paylater",
-        "label": "SPayLater / ShopeePay",
-        "number": "0812-3456-7890",
-        "note": ""
-      },
-      {
         "category": "ewallet",
         "label": "DANA",
         "number": "0895-4185-42233",
+        "note": ""
+      },
+      {
+        "category": "paylater",
+        "label": "SPayLater / ShopeePay",
+        "number": "0812-3456-7890",
         "note": ""
       }
     ],
