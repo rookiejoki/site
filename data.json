@@ -6258,8 +6258,8 @@
       {
         "category": "bank",
         "label": "Tidak Tersedia",
-        "number": "Tidak Tersedia",
-        "note": "Tidak Tersedia"
+        "number": "-",
+        "note": "-"
       },
       {
         "category": "paylater",
