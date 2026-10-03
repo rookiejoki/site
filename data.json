@@ -6256,16 +6256,16 @@
         "note": "-"
       },
       {
-        "category": "bank",
-        "label": "Tidak Tersedia",
-        "number": "-",
-        "note": "-"
-      },
-      {
         "category": "ewallet",
         "label": "DANA",
         "number": "0895-4185-42233",
         "note": ""
+      },
+      {
+        "category": "bank",
+        "label": "Tidak Tersedia",
+        "number": "-",
+        "note": "-"
       },
       {
         "category": "paylater",
