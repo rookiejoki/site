@@ -6269,9 +6269,9 @@
       },
       {
         "category": "paylater",
-        "label": "SPayLater / ShopeePay",
-        "number": "0812-3456-7890",
-        "note": ""
+        "label": "Tidak Tersedia",
+        "number": "-",
+        "note": "-"
       }
     ],
     "buttonLabels": {
